@@ -1,0 +1,1406 @@
+Process:               The Sims 3 [3809]
+Path:                  /Users/USER/*/Sims3Launcher.app/Contents/MacOS/../Resources/The Sims 3.app/Contents/MacOS/The Sims 3
+Identifier:            com.ea.mac.thesims3.game
+Version:               1.0 (1)
+Code Type:             X86-64 (Native)
+Parent Process:        ??? [1]
+User ID:               501
+
+Date/Time:             2020-10-31 11:21:58.131 -0400
+OS Version:            Mac OS X 10.15.5 (19F96)
+Report Version:        12
+Anonymous UUID:        9BE35634-18F7-F508-EB21-38067DBE9BDD
+
+
+Time Awake Since Boot: 5600 seconds
+
+System Integrity Protection: enabled
+
+Crashed Thread:        0  Dispatch queue: com.apple.main-thread
+
+Exception Type:        EXC_BAD_ACCESS (SIGSEGV)
+Exception Codes:       KERN_INVALID_ADDRESS at 0x0000000000000010
+Exception Note:        EXC_CORPSE_NOTIFY
+
+Termination Signal:    Segmentation fault: 11
+Termination Reason:    Namespace SIGNAL, Code 0xb
+Terminating Process:   exc handler [3809]
+
+VM Regions Near 0x10:
+--> 
+    __TEXT                 000000010c4fa000-000000010c4fc000 [    8K] r-x/rwx SM=COW  /Users/USER/*/Sims3Launcher.app/Contents/Resources/The Sims 3.app/Contents/MacOS/The Sims 3
+
+Thread 0 Crashed:: Dispatch queue: com.apple.main-thread
+0   com.ea.mac.thesims3.game      	0x000000010c8fc438 0x10c4fa000 + 4203576
+1   ???                           	000000000000000000 0 + 0
+2   com.ea.mac.thesims3.game      	0x000000010c8fb771 0x10c4fa000 + 4200305
+3   com.ea.mac.thesims3.game      	0x000000010c8fc08d 0x10c4fa000 + 4202637
+4   com.ea.mac.thesims3.game      	0x000000010c4fc626 0x10c4fa000 + 9766
+5   com.ea.mac.thesims3.game      	0x000000010cec9f29 0x10c4fa000 + 10288937
+6   com.ea.mac.thesims3.game      	0x000000010cecb1dc 0x10c4fa000 + 10293724
+7   com.ea.mac.thesims3.game      	0x000000010d1673d3 0x10c4fa000 + 13030355
+8   com.ea.mac.thesims3.game      	0x000000010cd7453d 0x10c4fa000 + 8889661
+9   com.ea.mac.thesims3.game      	0x000000010ca84060 0x10c4fa000 + 5808224
+10  com.ea.mac.thesims3.game      	0x000000010ca86e57 0x10c4fa000 + 5819991
+11  com.ea.mac.thesims3.game      	0x000000010c4fd267 0x10c4fa000 + 12903
+12  com.ea.mac.thesims3.game      	0x000000010c4fd231 0x10c4fa000 + 12849
+13  com.apple.Foundation          	0x00007fff39bc52ea __NSFireTimer + 67
+14  com.apple.CoreFoundation      	0x00007fff374ea889 __CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__ + 20
+15  com.apple.CoreFoundation      	0x00007fff374ea3ef __CFRunLoopDoTimer + 859
+16  com.apple.CoreFoundation      	0x00007fff374e9ed7 __CFRunLoopDoTimers + 322
+17  com.apple.CoreFoundation      	0x00007fff374cec7a __CFRunLoopRun + 1871
+18  com.apple.CoreFoundation      	0x00007fff374cdece CFRunLoopRunSpecific + 462
+19  com.apple.HIToolbox           	0x00007fff360fcabd RunCurrentEventLoopInMode + 292
+20  com.apple.HIToolbox           	0x00007fff360fc7d5 ReceiveNextEventCommon + 584
+21  com.apple.HIToolbox           	0x00007fff360fc579 _BlockUntilNextEventMatchingListInModeWithFilter + 64
+22  com.apple.AppKit              	0x00007fff34744829 _DPSNextEvent + 883
+23  com.apple.AppKit              	0x00007fff34743070 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1352
+24  com.apple.AppKit              	0x00007fff34734d7e -[NSApplication run] + 658
+25  com.apple.AppKit              	0x00007fff34706b86 NSApplicationMain + 777
+26  libdyld.dylib                 	0x00007fff71331cc9 start + 1
+
+Thread 1:: com.apple.NSURLConnectionLoader
+0   libsystem_kernel.dylib        	0x00007fff71472dfa mach_msg_trap + 10
+1   libsystem_kernel.dylib        	0x00007fff71473170 mach_msg + 60
+2   com.apple.CoreFoundation      	0x00007fff374cff85 __CFRunLoopServiceMachPort + 247
+3   com.apple.CoreFoundation      	0x00007fff374cea52 __CFRunLoopRun + 1319
+4   com.apple.CoreFoundation      	0x00007fff374cdece CFRunLoopRunSpecific + 462
+5   com.apple.CFNetwork           	0x00007fff35d0802a 0x7fff35cbe000 + 303146
+6   com.apple.Foundation          	0x00007fff39b5e7a2 __NSThread__start__ + 1064
+7   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+8   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 2:: com.apple.CFSocket.private
+0   libsystem_kernel.dylib        	0x00007fff7147b0fe __select + 10
+1   com.apple.CoreFoundation      	0x00007fff374f8ce3 __CFSocketManager + 641
+2   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+3   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 3:
+0   libsystem_kernel.dylib        	0x00007fff71473836 __open_nocancel + 10
+1   libsystem_c.dylib             	0x00007fff713bb030 fopen + 71
+2   com.ea.mac.thesims3.game      	0x000000010c8d7c4c 0x10c4fa000 + 4054092
+3   com.ea.mac.thesims3.game      	0x000000010c928ec5 0x10c4fa000 + 4386501
+4   com.ea.mac.thesims3.game      	0x000000010c926f42 0x10c4fa000 + 4378434
+5   com.ea.mac.thesims3.game      	0x000000010c926b40 0x10c4fa000 + 4377408
+6   com.ea.mac.thesims3.game      	0x000000010c779ece 0x10c4fa000 + 2621134
+7   com.ea.mac.thesims3.game      	0x000000010c779f5e 0x10c4fa000 + 2621278
+8   com.ea.mac.thesims3.game      	0x000000010c9270ba 0x10c4fa000 + 4378810
+9   com.ea.mac.thesims3.game      	0x000000010c927009 0x10c4fa000 + 4378633
+10  libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+11  libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 4:: JobThread0
+0   libsystem_kernel.dylib        	0x00007fff71472e36 semaphore_wait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1298 0x10c4fa000 + 2847384
+2   com.ea.mac.thesims3.game      	0x000000010d1f1eb5 0x10c4fa000 + 13598389
+3   com.ea.mac.thesims3.game      	0x000000010d1f1c31 0x10c4fa000 + 13597745
+4   com.ea.mac.thesims3.game      	0x000000010d1f1599 0x10c4fa000 + 13596057
+5   com.ea.mac.thesims3.game      	0x000000010c7e8940 0x10c4fa000 + 3074368
+6   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+7   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 5:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 6:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 7:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 8:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 9:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 10:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 11:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 12:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 13:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 14:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 15:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 16:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 17:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 18:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 19:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 20:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 21:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 22:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 23:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 24:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 25:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 26:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 27:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 28:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 29:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 30:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 31:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 32:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 33:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 34:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 35:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 36:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 37:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 38:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 39:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 40:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 41:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 42:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 43:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 44:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 45:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 46:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 47:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 48:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 49:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 50:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 51:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 52:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 53:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 54:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 55:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 56:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 57:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 58:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 59:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 60:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 61:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 62:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 63:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 64:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 65:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 66:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 67:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 68:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 69:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 70:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 71:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 72:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 73:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 74:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 75:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 76:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 77:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 78:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 79:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 80:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 81:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 82:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 83:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 84:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 85:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 86:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 87:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 88:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 89:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 90:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 91:: JobThread5
+0   libsystem_kernel.dylib        	0x00007fff71472e36 semaphore_wait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1298 0x10c4fa000 + 2847384
+2   com.ea.mac.thesims3.game      	0x000000010d1f1da3 0x10c4fa000 + 13598115
+3   com.ea.mac.thesims3.game      	0x000000010d1f1c31 0x10c4fa000 + 13597745
+4   com.ea.mac.thesims3.game      	0x000000010d1f1599 0x10c4fa000 + 13596057
+5   com.ea.mac.thesims3.game      	0x000000010c7e8940 0x10c4fa000 + 3074368
+6   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+7   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 92:: File System Device
+0   libsystem_kernel.dylib        	0x00007fff71475882 __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	0x00007fff71536425 _pthread_cond_wait + 698
+2   com.ea.mac.thesims3.game      	0x000000010c74d9db 0x10c4fa000 + 2439643
+3   com.ea.mac.thesims3.game      	0x000000010c801577 0x10c4fa000 + 3175799
+4   com.ea.mac.thesims3.game      	0x000000010c7e8940 0x10c4fa000 + 3074368
+5   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+6   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 93:
+0   libsystem_kernel.dylib        	0x00007fff71475882 __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	0x00007fff71536425 _pthread_cond_wait + 698
+2   com.ea.mac.thesims3.game      	0x000000010c74d9db 0x10c4fa000 + 2439643
+3   com.ea.mac.thesims3.game      	0x000000010c738c93 0x10c4fa000 + 2354323
+4   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+5   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+6   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 94:
+0   libsystem_kernel.dylib        	0x00007fff714763a6 __recvfrom + 10
+1   com.ea.mac.thesims3.game      	0x000000010c6ed33a 0x10c4fa000 + 2044730
+2   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+3   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+4   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 95:: NamedPipeListenerThread
+0   libsystem_kernel.dylib        	0x00007fff71475756 __semwait_signal + 10
+1   libsystem_c.dylib             	0x00007fff713f8eea nanosleep + 196
+2   libc++.1.dylib                	0x00007fff6e63c6da std::__1::this_thread::sleep_for(std::__1::chrono::duration<long long, std::__1::ratio<1l, 1000000000l> > const&) + 73
+3   com.ea.mac.thesims3.game      	0x000000010cdddac1 0x10c4fa000 + 9321153
+4   com.ea.mac.thesims3.game      	0x000000010cddd7d5 0x10c4fa000 + 9320405
+5   com.ea.mac.thesims3.game      	0x000000010c7e8940 0x10c4fa000 + 3074368
+6   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+7   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 96:
+0   libsystem_kernel.dylib        	0x00007fff71475756 __semwait_signal + 10
+1   libsystem_c.dylib             	0x00007fff713f8eea nanosleep + 196
+2   libsystem_c.dylib             	0x00007fff713f8de4 usleep + 53
+3   com.ea.mac.thesims3.game      	0x000000010c97cf8f 0x10c4fa000 + 4730767
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 97:
+0   libsystem_kernel.dylib        	0x00007fff71475756 __semwait_signal + 10
+1   libsystem_c.dylib             	0x00007fff713f8eea nanosleep + 196
+2   libsystem_c.dylib             	0x00007fff713f8de4 usleep + 53
+3   com.ea.mac.thesims3.game      	0x000000010c97cf8f 0x10c4fa000 + 4730767
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 98:
+0   libsystem_kernel.dylib        	0x00007fff71475756 __semwait_signal + 10
+1   libsystem_c.dylib             	0x00007fff713f8eea nanosleep + 196
+2   libsystem_c.dylib             	0x00007fff713f8de4 usleep + 53
+3   com.ea.mac.thesims3.game      	0x000000010c984b5a 0x10c4fa000 + 4762458
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 99:: Simulator
+0   com.ea.mac.thesims3.game      	0x000000010ccb89c0 0x10c4fa000 + 8120768
+1   ???                           	0x00007000068ddfb0 0 + 123145412272048
+2   com.ea.mac.thesims3.game      	0x000000010d125b82 0x10c4fa000 + 12761986
+3   com.ea.mac.thesims3.game      	0x000000010d10df39 0x10c4fa000 + 12664633
+4   com.ea.mac.thesims3.game      	0x000000010cfa804d 0x10c4fa000 + 11198541
+5   com.ea.mac.thesims3.game      	0x000000010cdb83c1 0x10c4fa000 + 9167809
+6   com.ea.mac.thesims3.game      	0x000000010cdb7d4b 0x10c4fa000 + 9166155
+7   com.ea.mac.thesims3.game      	0x000000010cfc8813 0x10c4fa000 + 11331603
+8   com.ea.mac.thesims3.game      	0x000000010cbb36bc 0x10c4fa000 + 7050940
+9   com.ea.mac.thesims3.game      	0x000000010ca8f1f1 0x10c4fa000 + 5853681
+10  com.ea.mac.thesims3.game      	0x000000010ca94c93 0x10c4fa000 + 5876883
+11  com.ea.mac.thesims3.game      	0x000000010ca8fc03 0x10c4fa000 + 5856259
+12  com.ea.mac.thesims3.game      	0x000000010cc199af 0x10c4fa000 + 7469487
+13  com.ea.mac.thesims3.game      	0x000000010cc18f16 0x10c4fa000 + 7466774
+14  com.ea.mac.thesims3.game      	0x000000010cc18250 0x10c4fa000 + 7463504
+15  com.ea.mac.thesims3.game      	0x000000010ce24e1e 0x10c4fa000 + 9612830
+16  com.ea.mac.thesims3.game      	0x000000010c7e8940 0x10c4fa000 + 3074368
+17  libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+18  libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 100:
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c7af1d5 0x10c4fa000 + 2838997
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 101:: AudioSystem
+0   libsystem_kernel.dylib        	0x00007fff71475756 __semwait_signal + 10
+1   libsystem_c.dylib             	0x00007fff713f8eea nanosleep + 196
+2   com.ea.mac.thesims3.game      	0x000000010d336d2f 0x10c4fa000 + 14929199
+3   com.ea.mac.thesims3.game      	0x000000010c7e8940 0x10c4fa000 + 3074368
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 102:: Job Manager - Job Thread
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c9ad44c 0x10c4fa000 + 4928588
+2   com.ea.mac.thesims3.game      	0x000000010ca62cbb 0x10c4fa000 + 5672123
+3   com.ea.mac.thesims3.game      	0x000000010c7e8c3e 0x10c4fa000 + 3075134
+4   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+5   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 103:: AMCP Logging Spool
+0   libsystem_kernel.dylib        	0x00007fff71472e36 semaphore_wait_trap + 10
+1   com.apple.audio.caulk         	0x00007fff6af06b16 caulk::mach::semaphore::wait() + 16
+2   com.apple.audio.caulk         	0x00007fff6af069b2 caulk::semaphore::timed_wait(double) + 106
+3   com.apple.audio.caulk         	0x00007fff6af067c4 caulk::concurrent::details::worker_thread::run() + 30
+4   com.apple.audio.caulk         	0x00007fff6af061e4 void* caulk::thread_proxy<std::__1::tuple<caulk::thread::attributes, void (caulk::concurrent::details::worker_thread::*)(), std::__1::tuple<caulk::concurrent::details::worker_thread*> > >(void*) + 45
+5   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+6   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 104:
+0   libsystem_kernel.dylib        	0x00007fff71472e36 semaphore_wait_trap + 10
+1   com.apple.audio.caulk         	0x00007fff6af06b16 caulk::mach::semaphore::wait() + 16
+2   com.apple.audio.caulk         	0x00007fff6af069b2 caulk::semaphore::timed_wait(double) + 106
+3   com.apple.audio.caulk         	0x00007fff6af067c4 caulk::concurrent::details::worker_thread::run() + 30
+4   com.apple.audio.caulk         	0x00007fff6af061e4 void* caulk::thread_proxy<std::__1::tuple<caulk::thread::attributes, void (caulk::concurrent::details::worker_thread::*)(), std::__1::tuple<caulk::concurrent::details::worker_thread*> > >(void*) + 45
+5   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+6   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 105:: EAAudioCore Dac
+0   libsystem_kernel.dylib        	0x00007fff71472e4e semaphore_timedwait_trap + 10
+1   com.ea.mac.thesims3.game      	0x000000010c7b1325 0x10c4fa000 + 2847525
+2   com.ea.mac.thesims3.game      	0x000000010c9e5a3c 0x10c4fa000 + 5159484
+3   com.ea.mac.thesims3.game      	0x000000010c9e5b15 0x10c4fa000 + 5159701
+4   com.ea.mac.thesims3.game      	0x000000010c9e27bd 0x10c4fa000 + 5146557
+5   com.ea.mac.thesims3.game      	0x000000010c7e8940 0x10c4fa000 + 3074368
+6   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+7   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 106:: com.apple.audio.IOThread.client
+0   libsystem_kernel.dylib        	0x00007fff71472dfa mach_msg_trap + 10
+1   libsystem_kernel.dylib        	0x00007fff71473170 mach_msg + 60
+2   com.apple.audio.CoreAudio     	0x00007fff36bb3c75 HALB_MachPort::SendSimpleMessageWithSimpleReply(unsigned int, unsigned int, int, int&, bool, unsigned int) + 111
+3   com.apple.audio.CoreAudio     	0x00007fff36aaff18 invocation function for block in HALC_ProxyIOContext::HALC_ProxyIOContext(unsigned int, unsigned int) + 2677
+4   com.apple.audio.CoreAudio     	0x00007fff36be3c22 HALB_IOThread::Entry(void*) + 72
+5   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+6   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 107:: com.apple.NSEventThread
+0   libsystem_kernel.dylib        	0x00007fff71472dfa mach_msg_trap + 10
+1   libsystem_kernel.dylib        	0x00007fff71473170 mach_msg + 60
+2   com.apple.CoreFoundation      	0x00007fff374cff85 __CFRunLoopServiceMachPort + 247
+3   com.apple.CoreFoundation      	0x00007fff374cea52 __CFRunLoopRun + 1319
+4   com.apple.CoreFoundation      	0x00007fff374cdece CFRunLoopRunSpecific + 462
+5   com.apple.AppKit              	0x00007fff348e6144 _NSEventThread + 132
+6   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+7   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 108:: File System Device
+0   libsystem_kernel.dylib        	0x00007fff71475882 __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	0x00007fff71536425 _pthread_cond_wait + 698
+2   com.ea.mac.thesims3.game      	0x000000010c74d9db 0x10c4fa000 + 2439643
+3   com.ea.mac.thesims3.game      	0x000000010c801577 0x10c4fa000 + 3175799
+4   com.ea.mac.thesims3.game      	0x000000010c7e8940 0x10c4fa000 + 3074368
+5   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+6   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 109:: File System Device
+0   libsystem_kernel.dylib        	0x00007fff71475882 __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	0x00007fff71536425 _pthread_cond_wait + 698
+2   com.ea.mac.thesims3.game      	0x000000010c74d9db 0x10c4fa000 + 2439643
+3   com.ea.mac.thesims3.game      	0x000000010c801577 0x10c4fa000 + 3175799
+4   com.ea.mac.thesims3.game      	0x000000010c7e8940 0x10c4fa000 + 3074368
+5   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+6   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 110:: MoviePlayer2 Decode Thread
+0   libsystem_kernel.dylib        	0x00007fff71475882 __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	0x00007fff71536425 _pthread_cond_wait + 698
+2   com.ea.mac.thesims3.game      	0x000000010c74d9db 0x10c4fa000 + 2439643
+3   com.ea.mac.thesims3.game      	0x000000010ca5b847 0x10c4fa000 + 5642311
+4   com.ea.mac.thesims3.game      	0x000000010ca0c65b 0x10c4fa000 + 5318235
+5   com.ea.mac.thesims3.game      	0x000000010c9d70ad 0x10c4fa000 + 5099693
+6   com.ea.mac.thesims3.game      	0x000000010ca0f0fd 0x10c4fa000 + 5329149
+7   com.ea.mac.thesims3.game      	0x000000010c7e8940 0x10c4fa000 + 3074368
+8   libsystem_pthread.dylib       	0x00007fff71536109 _pthread_start + 148
+9   libsystem_pthread.dylib       	0x00007fff71531b8b thread_start + 15
+
+Thread 111:
+0   libsystem_pthread.dylib       	0x00007fff71531b68 start_wqthread + 0
+
+Thread 112:
+0   libsystem_pthread.dylib       	0x00007fff71531b68 start_wqthread + 0
+
+Thread 113:
+0   libsystem_pthread.dylib       	0x00007fff71531b68 start_wqthread + 0
+
+Thread 114:
+0   libsystem_pthread.dylib       	0x00007fff71531b68 start_wqthread + 0
+
+Thread 115:
+0   libsystem_pthread.dylib       	0x00007fff71531b68 start_wqthread + 0
+
+Thread 0 crashed with X86 Thread State (64-bit):
+  rax: 0x0000000000000000  rbx: 0x0000000000000000  rcx: 0x0000000000000000  rdx: 0x0000000000000001
+  rdi: 0x00007f9d8080c028  rsi: 0x0000000138669c40  rbp: 0x00007ffee3702a60  rsp: 0x00007ffee3702a58
+   r8: 0x0000000000000840   r9: 0x00007f9d8080c030  r10: 0x0000000000000004  r11: 0xffffffffc9dfd850
+  r12: 0x00007f9d8080c028  r13: 0x3ffffffffffffff8  r14: 0x0000000000000210  r15: 0x00007f9d8080c050
+  rip: 0x000000010c8fc438  rfl: 0x0000000000010202  cr2: 0x0000000000000010
+  
+Logical CPU:     3
+Error Code:      0x00000006 (no mapping for user data write)
+Trap Number:     14
+
+
+Binary Images:
+       0x10c4fa000 -        0x10db0bff7 +com.ea.mac.thesims3.game (1.0 - 1) <6F0EC443-1B6A-38A4-890C-C7C96CA988BF> /Users/USER/*/Sims3Launcher.app/Contents/Resources/The Sims 3.app/Contents/MacOS/The Sims 3
+       0x10dd10000 -        0x10dee5bb7 +libActivation64.dylib (0) <D9BEEB54-878A-37F7-9DFD-E2CC94E4EB07> /Users/USER/*/Sims3Launcher.app/Contents/Resources/The Sims 3.app/Contents/Frameworks/libActivation64.dylib
+       0x112314000 -        0x112317047  libobjc-trampolines.dylib (787.1) <8212B354-A106-3806-A022-A60F2B2FA5C9> /usr/lib/libobjc-trampolines.dylib
+       0x113f3f000 -        0x113f43fff  com.apple.audio.AppleHDAHALPlugIn (283.15 - 283.15) <64D3C5BB-CF9B-3EE1-A175-236E19CDF0DA> /System/Library/Extensions/AppleHDA.kext/Contents/PlugIns/AppleHDAHALPlugIn.bundle/Contents/MacOS/AppleHDAHALPlugIn
+       0x1173c9000 -        0x117522ff7  com.apple.audio.units.Components (1.14 - 1.14) <AFECE153-6FBF-307E-8DC7-AD29AC611EA4> /System/Library/Components/CoreAudio.component/Contents/MacOS/CoreAudio
+       0x11793a000 -        0x1179cbeff  dyld (750.5) <26346F4C-B18E-31A1-9964-30736214F1BF> /usr/lib/dyld
+    0x7fff2a53e000 -     0x7fff2a78bff8  com.apple.RawCamera.bundle (9.02.0 - 1350.29) <0CC24FF1-0754-3A75-BA2D-212CF70ADDC1> /System/Library/CoreServices/RawCamera.bundle/Contents/MacOS/RawCamera
+    0x7fff2fe50000 -     0x7fff3024fff1  com.apple.driver.AppleIntelKBLGraphicsMTLDriver (14.6.18 - 14.0.6) <EB13F69C-7138-3253-B97D-CC0999BF63C2> /System/Library/Extensions/AppleIntelKBLGraphicsMTLDriver.bundle/Contents/MacOS/AppleIntelKBLGraphicsMTLDriver
+    0x7fff330d7000 -     0x7fff330d7fff  com.apple.Accelerate (1.11 - Accelerate 1.11) <56DFF715-6A4E-3231-BDCC-A348BCB05047> /System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate
+    0x7fff330d8000 -     0x7fff330eefef  libCGInterfaces.dylib (524.2.1) <A423F932-C044-3CEB-BF20-BF4CB323361E> /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/Libraries/libCGInterfaces.dylib
+    0x7fff330ef000 -     0x7fff33745fff  com.apple.vImage (8.1 - 524.2.1) <17C93AB9-1625-3FDB-9851-C5E77BBE3428> /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/vImage
+    0x7fff33746000 -     0x7fff339adff7  libBLAS.dylib (1303.60.1) <CBC28BE4-3C78-3AED-9565-0D625251D121> /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
+    0x7fff339ae000 -     0x7fff33e81fef  libBNNS.dylib (144.100.2) <8D653678-1F9B-3670-AAE2-46DFB8D37643> /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBNNS.dylib
+    0x7fff33e82000 -     0x7fff3421dfff  libLAPACK.dylib (1303.60.1) <F8E9D081-7C60-32EC-A47D-2D30CAD73C5F> /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLAPACK.dylib
+    0x7fff3421e000 -     0x7fff34233fec  libLinearAlgebra.dylib (1303.60.1) <D2C1ACEA-2B6A-339A-9EEB-62A76CC92CBE> /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLinearAlgebra.dylib
+    0x7fff34234000 -     0x7fff34239ff3  libQuadrature.dylib (7) <3112C977-8306-3190-8313-01A952B7F3CF> /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libQuadrature.dylib
+    0x7fff3423a000 -     0x7fff342aafff  libSparse.dylib (103) <40510BF9-99A7-3155-A81D-6DE5A0C73EDC> /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libSparse.dylib
+    0x7fff342ab000 -     0x7fff342bdfef  libSparseBLAS.dylib (1303.60.1) <3C1066AB-20D5-38D2-B1F2-70A03DE76D0B> /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libSparseBLAS.dylib
+    0x7fff342be000 -     0x7fff34495fd7  libvDSP.dylib (735.121.1) <74702E2E-ED05-3765-B18C-64BEFF62B517> /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvDSP.dylib
+    0x7fff34496000 -     0x7fff34558fef  libvMisc.dylib (735.121.1) <137558BF-503D-3A6E-96DC-A181E3FB31FF> /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvMisc.dylib
+    0x7fff34559000 -     0x7fff34559fff  com.apple.Accelerate.vecLib (3.11 - vecLib 3.11) <D7E8E400-35C8-3174-9956-8D1B483620DA> /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/vecLib
+    0x7fff3455a000 -     0x7fff345b9ff0  com.apple.Accounts (113 - 113) <0510C893-F1F2-38B2-B3AA-A30DB2F5B688> /System/Library/Frameworks/Accounts.framework/Versions/A/Accounts
+    0x7fff34703000 -     0x7fff354c3ffd  com.apple.AppKit (6.9 - 1894.50.103) <61269B8C-C432-335F-8894-B95C235A41A5> /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+    0x7fff35513000 -     0x7fff35513fff  com.apple.ApplicationServices (48 - 50) <EEC73694-1A37-3C14-A839-6991E2BD8655> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/ApplicationServices
+    0x7fff35514000 -     0x7fff3557ffff  com.apple.ApplicationServices.ATS (377 - 493.0.4.1) <A6912C4A-55CC-3701-BACA-E63423B99481> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+    0x7fff35618000 -     0x7fff35656ff0  libFontRegistry.dylib (274.0.5.1) <A78A7869-C96C-3AD6-A038-DE541639BB60> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/Resources/libFontRegistry.dylib
+    0x7fff356b1000 -     0x7fff356e0fff  com.apple.ATSUI (1.0 - 1) <4B3C2201-DBB3-352C-936B-9C423122EFF6> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATSUI.framework/Versions/A/ATSUI
+    0x7fff356e1000 -     0x7fff356e5ffb  com.apple.ColorSyncLegacy (4.13.0 - 1) <47D42CDE-2E9A-3AF6-9365-1BFD1189196B> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSyncLegacy.framework/Versions/A/ColorSyncLegacy
+    0x7fff3577f000 -     0x7fff357d6ffa  com.apple.HIServices (1.22 - 675.1) <273492E3-FF0F-3A8A-A83F-0F11F99B5F26> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+    0x7fff357d7000 -     0x7fff357e5fff  com.apple.LangAnalysis (1.7.0 - 1.7.0) <DA175323-5BE3-3C54-92D4-A171A4A067E6> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+    0x7fff357e6000 -     0x7fff3582bffa  com.apple.print.framework.PrintCore (15.4 - 516.2) <99AEBCDB-2DCA-3A13-906F-7F0D7962B002> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+    0x7fff3582c000 -     0x7fff35836ff7  com.apple.QD (4.0 - 413) <D2E1DC80-D26F-3508-BBA5-B8AE7ED6CB0E> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+    0x7fff35837000 -     0x7fff35844ffc  com.apple.speech.synthesis.framework (9.0.24 - 9.0.24) <823C0DE7-1351-3B39-8F06-AB5FCAD2C874> /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+    0x7fff35845000 -     0x7fff35926ffa  com.apple.audio.toolbox.AudioToolbox (1.14 - 1.14) <75651F0A-F2CE-3F68-B86A-E66B8815DCF4> /System/Library/Frameworks/AudioToolbox.framework/Versions/A/AudioToolbox
+    0x7fff35928000 -     0x7fff35928fff  com.apple.audio.units.AudioUnit (1.14 - 1.14) <E51DCB3C-CF4F-320B-AC86-D445E30C0891> /System/Library/Frameworks/AudioUnit.framework/Versions/A/AudioUnit
+    0x7fff35cbe000 -     0x7fff3604cffd  com.apple.CFNetwork (1126 - 1126) <BB8F4C63-10B8-3ACD-84CF-D4DCFA9245DD> /System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork
+    0x7fff360c8000 -     0x7fff360c8fff  com.apple.Carbon (160 - 162) <4F1F60CB-6C1E-3D79-832E-8D606601F282> /System/Library/Frameworks/Carbon.framework/Versions/A/Carbon
+    0x7fff360c9000 -     0x7fff360ccff3  com.apple.CommonPanels (1.2.6 - 101) <333BBF55-AF23-3B99-A9FF-7906175B9406> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CommonPanels.framework/Versions/A/CommonPanels
+    0x7fff360cd000 -     0x7fff363c1ff3  com.apple.HIToolbox (2.1.1 - 994.6) <5C44ACA7-D158-3F9B-8F88-0477510D44FA> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox
+    0x7fff363c2000 -     0x7fff363c5ff3  com.apple.help (1.3.8 - 71) <4B2701A0-8813-35F8-82F8-676B184D15C4> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Help.framework/Versions/A/Help
+    0x7fff363c6000 -     0x7fff363cbff7  com.apple.ImageCapture (9.0 - 1600.60.4.2) <20872A2D-CBF9-38E6-BD16-C1D387120651> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/ImageCapture.framework/Versions/A/ImageCapture
+    0x7fff363cc000 -     0x7fff363ccfff  com.apple.ink.framework (10.15 - 227) <5B60FDDE-D60E-326B-BD3D-6EA5FA1CBB76> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Ink.framework/Versions/A/Ink
+    0x7fff363cd000 -     0x7fff363e7ffa  com.apple.openscripting (1.7 - 185.1) <E59F893B-1A73-3098-8924-79227EC9787E> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/OpenScripting.framework/Versions/A/OpenScripting
+    0x7fff36408000 -     0x7fff36408fff  com.apple.print.framework.Print (15 - 271) <07C50BF6-2222-3769-A5B8-79D7F996183F> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Print.framework/Versions/A/Print
+    0x7fff36409000 -     0x7fff3640bff7  com.apple.securityhi (9.0 - 55008) <D7017D5A-4206-3E2F-9F8E-0F932422CA87> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SecurityHI.framework/Versions/A/SecurityHI
+    0x7fff3640c000 -     0x7fff36412fff  com.apple.speech.recognition.framework (6.0.3 - 6.0.3) <1188E643-967C-334E-BC1A-60A0F82C67E5> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SpeechRecognition.framework/Versions/A/SpeechRecognition
+    0x7fff365ac000 -     0x7fff365acfff  com.apple.Cocoa (6.11 - 23) <87426C3A-7C6C-39D0-905C-C591B997029E> /System/Library/Frameworks/Cocoa.framework/Versions/A/Cocoa
+    0x7fff365ba000 -     0x7fff366b0fff  com.apple.ColorSync (4.13.0 - 3394.9) <61698A7B-BB8C-3891-9547-703FF84671A8> /System/Library/Frameworks/ColorSync.framework/Versions/A/ColorSync
+    0x7fff3699b000 -     0x7fff36ea4ffb  com.apple.audio.CoreAudio (5.0 - 5.0) <62BEE4B7-8A26-3951-9D78-4E193617AF7A> /System/Library/Frameworks/CoreAudio.framework/Versions/A/CoreAudio
+    0x7fff36ef7000 -     0x7fff36f2ffff  com.apple.CoreBluetooth (1.0 - 1) <6BC7F863-4495-371F-BC54-543E5CFE1665> /System/Library/Frameworks/CoreBluetooth.framework/Versions/A/CoreBluetooth
+    0x7fff36f30000 -     0x7fff3731afe8  com.apple.CoreData (120 - 977.3) <D902A2E3-1D0A-3995-974E-A526976E5735> /System/Library/Frameworks/CoreData.framework/Versions/A/CoreData
+    0x7fff3731b000 -     0x7fff3744bffe  com.apple.CoreDisplay (1.0 - 186.6.12) <EA74CC46-8715-3B90-95E8-4594D2F0CC8A> /System/Library/Frameworks/CoreDisplay.framework/Versions/A/CoreDisplay
+    0x7fff3744c000 -     0x7fff378cbffb  com.apple.CoreFoundation (6.9 - 1676.105) <6AF8B3CC-BC3F-3869-B9FB-1D881422364E> /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+    0x7fff378cd000 -     0x7fff37f41ff8  com.apple.CoreGraphics (2.0 - 1355.17) <E1CE3919-F36B-309F-89BA-79F36DC8125E> /System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+    0x7fff37f4f000 -     0x7fff382aaff0  com.apple.CoreImage (15.0.0 - 940.9) <44F68E8C-315A-32A6-BB19-7F24C00AB347> /System/Library/Frameworks/CoreImage.framework/Versions/A/CoreImage
+    0x7fff3866b000 -     0x7fff38746ffc  com.apple.CoreMedia (1.0 - 2620.11.40.2) <0F490101-ED30-3189-B099-E247B6361A0B> /System/Library/Frameworks/CoreMedia.framework/Versions/A/CoreMedia
+    0x7fff38833000 -     0x7fff38833fff  com.apple.CoreServices (1069.24 - 1069.24) <D9F6AB40-10EC-3682-A969-85560E2E4768> /System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices
+    0x7fff38834000 -     0x7fff388b9fff  com.apple.AE (838.1 - 838.1) <5F26DA9B-FB2E-3AF8-964B-63BD6671CF12> /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+    0x7fff388ba000 -     0x7fff38b9bff7  com.apple.CoreServices.CarbonCore (1217 - 1217) <8022AF47-AA99-3786-B086-141D84F00387> /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+    0x7fff38b9c000 -     0x7fff38be9ffd  com.apple.DictionaryServices (1.2 - 323.6) <C0F3830C-A4C6-3046-9A6A-DE1B5D448C2C> /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+    0x7fff38bea000 -     0x7fff38bf2ff7  com.apple.CoreServices.FSEvents (1268.100.1 - 1268.100.1) <E4B2CAF2-1203-335F-9971-1278CB6E2AE0> /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/FSEvents.framework/Versions/A/FSEvents
+    0x7fff38bf3000 -     0x7fff38e2dff6  com.apple.LaunchServices (1069.24 - 1069.24) <2E0AD228-B1CC-3645-91EE-EB7F46F2147B> /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+    0x7fff38e2e000 -     0x7fff38ec6ff1  com.apple.Metadata (10.7.0 - 2076.6) <C8034E84-7DD4-34B9-9CDF-16A05032FF39> /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+    0x7fff38ec7000 -     0x7fff38ef4fff  com.apple.CoreServices.OSServices (1069.24 - 1069.24) <72FDEA52-7607-3745-AC43-630D80962099> /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+    0x7fff38ef5000 -     0x7fff38f5cfff  com.apple.SearchKit (1.4.1 - 1.4.1) <086EB5DF-A2EC-3342-8028-CA7996BE5CB2> /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+    0x7fff38f5d000 -     0x7fff38f81ff5  com.apple.coreservices.SharedFileList (131.4 - 131.4) <AE333DA2-C279-3751-8C15-B963E58EE61E> /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SharedFileList.framework/Versions/A/SharedFileList
+    0x7fff392a6000 -     0x7fff3945dffc  com.apple.CoreText (643.1.5.1 - 643.1.5.1) <715FE3F7-E8FB-3997-85A0-3AB2839F6C30> /System/Library/Frameworks/CoreText.framework/Versions/A/CoreText
+    0x7fff3945e000 -     0x7fff394a2ffb  com.apple.CoreVideo (1.8 - 344.3) <A200AFC7-2CB2-30CD-8B2A-1269CA64A29B> /System/Library/Frameworks/CoreVideo.framework/Versions/A/CoreVideo
+    0x7fff394a3000 -     0x7fff39530ffc  com.apple.framework.CoreWLAN (13.0 - 1601.2) <855E51AA-DF3A-3BB9-A4F0-6880D42B8762> /System/Library/Frameworks/CoreWLAN.framework/Versions/A/CoreWLAN
+    0x7fff396ec000 -     0x7fff396f7ff7  com.apple.DirectoryService.Framework (10.15 - 220.40.1) <06D98FD0-796F-356F-B492-A6D8F3D5BEC0> /System/Library/Frameworks/DirectoryService.framework/Versions/A/DirectoryService
+    0x7fff396f8000 -     0x7fff397a2ff0  com.apple.DiscRecording (9.0.3 - 9030.4.5) <D9033DDA-E4C8-36FB-AE60-4EF66F4F1F9E> /System/Library/Frameworks/DiscRecording.framework/Versions/A/DiscRecording
+    0x7fff397c7000 -     0x7fff397cdfff  com.apple.DiskArbitration (2.7 - 2.7) <52E7D181-2A18-37CD-B24F-AA32E93F7A69> /System/Library/Frameworks/DiskArbitration.framework/Versions/A/DiskArbitration
+    0x7fff399c0000 -     0x7fff39aeeff6  com.apple.FileProvider (304.1 - 304.1) <58D64236-947E-3E6A-85E6-C66AEF9E0EE0> /System/Library/Frameworks/FileProvider.framework/Versions/A/FileProvider
+    0x7fff39b06000 -     0x7fff39ecbfff  com.apple.Foundation (6.9 - 1676.105) <1FA28BAB-7296-3A09-8E1E-E62A7D233DB8> /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+    0x7fff39f38000 -     0x7fff39f88ff7  com.apple.GSS (4.0 - 2.0) <4E241C00-42A5-3572-9430-D950FBB7A4A0> /System/Library/Frameworks/GSS.framework/Versions/A/GSS
+    0x7fff3a0c5000 -     0x7fff3a1d9ff3  com.apple.Bluetooth (7.0.5 - 7.0.5f6) <5897C368-9674-3E34-B144-FFB06A2DF37B> /System/Library/Frameworks/IOBluetooth.framework/Versions/A/IOBluetooth
+    0x7fff3a23f000 -     0x7fff3a2e3ff3  com.apple.framework.IOKit (2.0.2 - 1726.121.1) <A0F54725-036F-3279-A46E-C2ABDBFD479B> /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+    0x7fff3a2e5000 -     0x7fff3a2f6ffb  com.apple.IOSurface (269.11 - 269.11) <D3CC2AA1-4AE2-30EE-A9DB-C04CCAA88ADE> /System/Library/Frameworks/IOSurface.framework/Versions/A/IOSurface
+    0x7fff3a375000 -     0x7fff3a4d1ffe  com.apple.ImageIO.framework (3.3.0 - 1976.6) <5B4C2E04-9161-3C82-A7FB-F4D51E3C1E10> /System/Library/Frameworks/ImageIO.framework/Versions/A/ImageIO
+    0x7fff3a4d2000 -     0x7fff3a4d5fff  libGIF.dylib (1976.6) <3B26EE1C-C570-305C-A9A3-EA62D2F2E7B8> /System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libGIF.dylib
+    0x7fff3a4d6000 -     0x7fff3a58ffff  libJP2.dylib (1976.6) <EB4E4E09-DD81-3E6B-A513-3667E810AEF3> /System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libJP2.dylib
+    0x7fff3a590000 -     0x7fff3a5b3fe3  libJPEG.dylib (1976.6) <9D7FAC55-85A6-34AB-9F26-0BCA381E8CE7> /System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libJPEG.dylib
+    0x7fff3a82f000 -     0x7fff3a849fef  libPng.dylib (1976.6) <4886A1F8-E9CA-38F2-BF2F-1FCA1DFDD1C9> /System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libPng.dylib
+    0x7fff3a84a000 -     0x7fff3a84bfff  libRadiance.dylib (1976.6) <FA759D33-131A-33B8-943E-32409F162738> /System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libRadiance.dylib
+    0x7fff3a84c000 -     0x7fff3a895fff  libTIFF.dylib (1976.6) <E9994BF8-6CF5-3422-B4FD-A14DC390EF12> /System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libTIFF.dylib
+    0x7fff3ad40000 -     0x7fff3bde0fe9  com.apple.JavaScriptCore (15609 - 15609.2.9.1.2) <62158DFB-C250-3A18-AE52-6296544AEA43> /System/Library/Frameworks/JavaScriptCore.framework/Versions/A/JavaScriptCore
+    0x7fff3bdf7000 -     0x7fff3be09ff3  com.apple.Kerberos (3.0 - 1) <AE0E56CA-D924-3CC8-BBAA-8C6EEC3038BE> /System/Library/Frameworks/Kerberos.framework/Versions/A/Kerberos
+    0x7fff3be0a000 -     0x7fff3be0afff  libHeimdalProxy.dylib (77) <A970C7A8-7CCD-3701-A459-078BD5E8FE4E> /System/Library/Frameworks/Kerberos.framework/Versions/A/Libraries/libHeimdalProxy.dylib
+    0x7fff3be0b000 -     0x7fff3be41ff7  com.apple.LDAPFramework (2.4.28 - 194.5) <4CFB6351-53B9-36AF-B654-AE636BBC361A> /System/Library/Frameworks/LDAP.framework/Versions/A/LDAP
+    0x7fff3c19c000 -     0x7fff3c1a6ffb  com.apple.MediaAccessibility (1.0 - 125.1) <DBF40A12-65A6-33E4-839C-292600B7D910> /System/Library/Frameworks/MediaAccessibility.framework/Versions/A/MediaAccessibility
+    0x7fff3c272000 -     0x7fff3c9bfff5  com.apple.MediaToolbox (1.0 - 2620.11.40.2) <40F16AF6-79D1-3C2E-976C-E7E7870A4EF9> /System/Library/Frameworks/MediaToolbox.framework/Versions/A/MediaToolbox
+    0x7fff3c9c1000 -     0x7fff3ca8bff7  com.apple.Metal (212.7 - 212.7) <CC7BF715-142B-3C2A-81AD-0E35693230F2> /System/Library/Frameworks/Metal.framework/Versions/A/Metal
+    0x7fff3caa8000 -     0x7fff3cae5ff7  com.apple.MetalPerformanceShaders.MPSCore (1.0 - 1) <52089325-EC97-3EED-ABB3-9B39EC0BD429> /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/Versions/A/MPSCore
+    0x7fff3cae6000 -     0x7fff3cb70fe2  com.apple.MetalPerformanceShaders.MPSImage (1.0 - 1) <9E434EA0-6BCA-3903-B882-CEB69730A63B> /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/Versions/A/MPSImage
+    0x7fff3cb71000 -     0x7fff3cb96ff4  com.apple.MetalPerformanceShaders.MPSMatrix (1.0 - 1) <EDD6C3A5-E231-3FB1-B4D4-45742AFB9A4E> /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSMatrix.framework/Versions/A/MPSMatrix
+    0x7fff3cb97000 -     0x7fff3cbacffb  com.apple.MetalPerformanceShaders.MPSNDArray (1.0 - 1) <C5A2B865-5CE2-3E5D-8452-54639FCB0954> /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNDArray.framework/Versions/A/MPSNDArray
+    0x7fff3cbad000 -     0x7fff3cd0bffc  com.apple.MetalPerformanceShaders.MPSNeuralNetwork (1.0 - 1) <47CCDBAC-5843-366A-A68C-6E8851D0865D> /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/Versions/A/MPSNeuralNetwork
+    0x7fff3cd0c000 -     0x7fff3cd5bff4  com.apple.MetalPerformanceShaders.MPSRayIntersector (1.0 - 1) <302BDF8E-B00A-3123-A6C4-E262B7513CF6> /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSRayIntersector.framework/Versions/A/MPSRayIntersector
+    0x7fff3cd5c000 -     0x7fff3cd5dff5  com.apple.MetalPerformanceShaders.MetalPerformanceShaders (1.0 - 1) <14F84B42-9DA2-39A1-81B4-666B8020520C> /System/Library/Frameworks/MetalPerformanceShaders.framework/Versions/A/MetalPerformanceShaders
+    0x7fff3dde4000 -     0x7fff3ddf0ffe  com.apple.NetFS (6.0 - 4.0) <AC74E6A4-6E9B-3AB1-9577-8277F8A3EDE0> /System/Library/Frameworks/NetFS.framework/Versions/A/NetFS
+    0x7fff3ddf1000 -     0x7fff3df48ff3  com.apple.Network (1.0 - 1) <B5B8E999-BBCC-3DEF-8881-8FFF69F8EC4B> /System/Library/Frameworks/Network.framework/Versions/A/Network
+    0x7fff40979000 -     0x7fff409d1fff  com.apple.opencl (3.5 - 3.5) <9B101D40-EA79-3C0D-B7AE-A3F18094B2D7> /System/Library/Frameworks/OpenCL.framework/Versions/A/OpenCL
+    0x7fff409d2000 -     0x7fff409eefff  com.apple.CFOpenDirectory (10.15 - 220.40.1) <BFC32EBE-D95C-3267-B95C-5CEEFD189EA6> /System/Library/Frameworks/OpenDirectory.framework/Versions/A/Frameworks/CFOpenDirectory.framework/Versions/A/CFOpenDirectory
+    0x7fff409ef000 -     0x7fff409faffd  com.apple.OpenDirectory (10.15 - 220.40.1) <76A20BBA-775F-3E17-AB0F-FEDFCDCE0716> /System/Library/Frameworks/OpenDirectory.framework/Versions/A/OpenDirectory
+    0x7fff41360000 -     0x7fff41362fff  libCVMSPluginSupport.dylib (17.10.22) <AAE07E0C-4B28-364B-A7D9-028C7CD14954> /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libCVMSPluginSupport.dylib
+    0x7fff41363000 -     0x7fff41368fff  libCoreFSCache.dylib (176.15) <609C5DFC-9A97-344D-BBC7-E0B08D862C63> /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libCoreFSCache.dylib
+    0x7fff41369000 -     0x7fff4136dfff  libCoreVMClient.dylib (176.15) <8F8DD27F-AC7C-398D-A8E3-396F1528E317> /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libCoreVMClient.dylib
+    0x7fff4136e000 -     0x7fff41376ff7  libGFXShared.dylib (17.10.22) <D0649AB5-5331-328D-8141-E5A6F06D4AD7> /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGFXShared.dylib
+    0x7fff41377000 -     0x7fff41381fff  libGL.dylib (17.10.22) <116DDBF7-D725-3B8C-BD0B-A21B758FE421> /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+    0x7fff41382000 -     0x7fff413b6ff7  libGLImage.dylib (17.10.22) <2B314C76-C7E6-3AC5-9157-70B0529C1F9B> /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLImage.dylib
+    0x7fff4154c000 -     0x7fff41588fff  libGLU.dylib (17.10.22) <B29F73B2-B5A9-3C38-AF77-351173D2E3DB> /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib
+    0x7fff41fc4000 -     0x7fff41fd3ff7  com.apple.opengl (17.10.22 - 17.10.22) <D5BF32A8-2E0A-345D-80A3-7CA7C2CF748D> /System/Library/Frameworks/OpenGL.framework/Versions/A/OpenGL
+    0x7fff42f91000 -     0x7fff43213ff9  com.apple.QuartzCore (1.11 - 841.2) <444E6F22-DFA6-391B-B51F-A96AE69E524D> /System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore
+    0x7fff43d94000 -     0x7fff440ddff1  com.apple.security (7.0 - 59306.120.7) <AEA33464-1507-36F1-8CAE-A86EB787F9B5> /System/Library/Frameworks/Security.framework/Versions/A/Security
+    0x7fff440de000 -     0x7fff44166ffb  com.apple.securityfoundation (6.0 - 55236.60.1) <79289FE1-CB5F-3BEF-A33F-11A29A93A681> /System/Library/Frameworks/SecurityFoundation.framework/Versions/A/SecurityFoundation
+    0x7fff44167000 -     0x7fff44194ff7  com.apple.securityinterface (10.0 - 55139.120.1) <CBC1CC5B-6C24-3843-935F-052767FBB69D> /System/Library/Frameworks/SecurityInterface.framework/Versions/A/SecurityInterface
+    0x7fff44195000 -     0x7fff44199ff8  com.apple.xpc.ServiceManagement (1.0 - 1) <4194D29D-F0D4-33F8-839A-D03C6C62D8DB> /System/Library/Frameworks/ServiceManagement.framework/Versions/A/ServiceManagement
+    0x7fff44e45000 -     0x7fff44eb3ff7  com.apple.SystemConfiguration (1.19 - 1.19) <0CF8726A-BE41-3E07-B895-FBC44B75450E> /System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration
+    0x7fff45132000 -     0x7fff454b5ff4  com.apple.VideoToolbox (1.0 - 2620.11.40.2) <53E0D852-61CA-34FE-9A9B-788708ADE495> /System/Library/Frameworks/VideoToolbox.framework/Versions/A/VideoToolbox
+    0x7fff45757000 -     0x7fff45ef4fff  libwebrtc.dylib (7609.2.9.1.2) <6047B7DA-1F79-35D6-B65B-F936B0E389EE> /System/Library/Frameworks/WebKit.framework/Versions/A/Frameworks/WebCore.framework/Versions/A/Frameworks/libwebrtc.dylib
+    0x7fff45ef5000 -     0x7fff48156ff4  com.apple.WebCore (15609 - 15609.2.9.1.2) <06B06644-07F9-3D09-A50E-F14D70FF6670> /System/Library/Frameworks/WebKit.framework/Versions/A/Frameworks/WebCore.framework/Versions/A/WebCore
+    0x7fff48157000 -     0x7fff48363ffc  com.apple.WebKitLegacy (15609 - 15609.2.9.1.2) <7580EF1B-F43B-3532-9340-AB20340D0850> /System/Library/Frameworks/WebKit.framework/Versions/A/Frameworks/WebKitLegacy.framework/Versions/A/WebKitLegacy
+    0x7fff48364000 -     0x7fff48a65ffa  com.apple.WebKit (15609 - 15609.2.9.1.2) <5148A4E2-0C5A-3DFD-8A02-676D7CC6ED4F> /System/Library/Frameworks/WebKit.framework/Versions/A/WebKit
+    0x7fff48e14000 -     0x7fff48ed9ff7  com.apple.APFS (1412.120.2 - 1412.120.2) <1E8FD511-FDC4-31A2-ACDE-EB5192032BC6> /System/Library/PrivateFrameworks/APFS.framework/Versions/A/APFS
+    0x7fff49520000 -     0x7fff4952bffc  com.apple.accessibility.AXCoreUtilities (1.0 - 1) <9E0367E6-6A4F-31FE-A493-9F3DF7510CA0> /System/Library/PrivateFrameworks/AXCoreUtilities.framework/Versions/A/AXCoreUtilities
+    0x7fff49fe9000 -     0x7fff49feaff1  com.apple.AggregateDictionary (1.0 - 1) <B907CE7A-0122-3E63-BF39-0A242B0DD7C4> /System/Library/PrivateFrameworks/AggregateDictionary.framework/Versions/A/AggregateDictionary
+    0x7fff4a401000 -     0x7fff4a41eff4  com.apple.AppContainer (4.0 - 448.100.6) <9C2D0065-9B38-3D1C-A090-46F129A1B3CA> /System/Library/PrivateFrameworks/AppContainer.framework/Versions/A/AppContainer
+    0x7fff4a473000 -     0x7fff4a481ff7  com.apple.AppSandbox (4.0 - 448.100.6) <7DAB58B1-8176-3FB0-A7B0-8A38E118E90B> /System/Library/PrivateFrameworks/AppSandbox.framework/Versions/A/AppSandbox
+    0x7fff4a8fc000 -     0x7fff4a920ffb  com.apple.framework.Apple80211 (13.0 - 1610.1) <B4B80CD6-B38E-3748-B30B-5088CCE9A7A8> /System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Apple80211
+    0x7fff4abde000 -     0x7fff4abedfd7  com.apple.AppleFSCompression (119.100.1 - 1.0) <2E75CF51-B693-3275-9A4F-40571D48745E> /System/Library/PrivateFrameworks/AppleFSCompression.framework/Versions/A/AppleFSCompression
+    0x7fff4acec000 -     0x7fff4acf7ff7  com.apple.AppleIDAuthSupport (1.0 - 1) <F4651654-E24F-3BF4-8DDF-8F91E5219BA4> /System/Library/PrivateFrameworks/AppleIDAuthSupport.framework/Versions/A/AppleIDAuthSupport
+    0x7fff4ad39000 -     0x7fff4ad81ff7  com.apple.AppleJPEG (1.0 - 1) <4655FF70-9772-3D7C-8159-5A5E56C9F84B> /System/Library/PrivateFrameworks/AppleJPEG.framework/Versions/A/AppleJPEG
+    0x7fff4b16b000 -     0x7fff4b16fff7  com.apple.AppleSRP (5.0 - 1) <B683AD55-A121-31DD-9A87-3A31C35FEABF> /System/Library/PrivateFrameworks/AppleSRP.framework/Versions/A/AppleSRP
+    0x7fff4b170000 -     0x7fff4b192fff  com.apple.applesauce (1.0 - 16.25) <33B66B71-64A4-365D-9953-E0545E69A5E7> /System/Library/PrivateFrameworks/AppleSauce.framework/Versions/A/AppleSauce
+    0x7fff4b251000 -     0x7fff4b254ffb  com.apple.AppleSystemInfo (3.1.5 - 3.1.5) <92580EE3-74BF-3488-90ED-C8EBD7A1B4C3> /System/Library/PrivateFrameworks/AppleSystemInfo.framework/Versions/A/AppleSystemInfo
+    0x7fff4b255000 -     0x7fff4b2a5ff7  com.apple.AppleVAFramework (6.1.2 - 6.1.2) <39C3583D-C824-3168-B67A-498487FD03D9> /System/Library/PrivateFrameworks/AppleVA.framework/Versions/A/AppleVA
+    0x7fff4b2ee000 -     0x7fff4b2fdff9  com.apple.AssertionServices (1.0 - 223.100.31) <478D2004-9B84-3AE9-9A0B-0A0B68ED028F> /System/Library/PrivateFrameworks/AssertionServices.framework/Versions/A/AssertionServices
+    0x7fff4b83f000 -     0x7fff4bc3aff8  com.apple.audio.AudioResourceArbitration (1.0 - 1) <9ABFE41A-FD01-3111-BA73-D2DD1BF96525> /System/Library/PrivateFrameworks/AudioResourceArbitration.framework/Versions/A/AudioResourceArbitration
+    0x7fff4bd79000 -     0x7fff4bdcaff9  com.apple.audio.AudioSession (1.0 - 17) <92B19FA8-828E-3E2D-9345-A833082C4972> /System/Library/PrivateFrameworks/AudioSession.framework/Versions/A/AudioSession
+    0x7fff4bdcb000 -     0x7fff4bdf8ff7  libSessionUtility.dylib (17) <C1A99F99-B940-338E-9F87-8F089965AD7E> /System/Library/PrivateFrameworks/AudioSession.framework/libSessionUtility.dylib
+    0x7fff4be90000 -     0x7fff4c0d0fe0  com.apple.audio.AudioToolboxCore (1.0 - 1104.84) <FA17E892-6A1A-309D-95C7-30ACFC44319C> /System/Library/PrivateFrameworks/AudioToolboxCore.framework/Versions/A/AudioToolboxCore
+    0x7fff4c0d4000 -     0x7fff4c1f0ff0  com.apple.AuthKit (1.0 - 1) <375C3886-5430-3C02-BD2C-4244BF490ABA> /System/Library/PrivateFrameworks/AuthKit.framework/Versions/A/AuthKit
+    0x7fff4c3ad000 -     0x7fff4c3b6ff7  com.apple.coreservices.BackgroundTaskManagement (1.0 - 104) <F070F440-27AB-3FCF-9602-F278C332CA01> /System/Library/PrivateFrameworks/BackgroundTaskManagement.framework/Versions/A/BackgroundTaskManagement
+    0x7fff4c3b7000 -     0x7fff4c458ff5  com.apple.backup.framework (1.11.5 - 1298.5.10) <637CA389-627A-365C-98C2-D297C47D6EE3> /System/Library/PrivateFrameworks/Backup.framework/Versions/A/Backup
+    0x7fff4c459000 -     0x7fff4c4e5ff6  com.apple.BaseBoard (466.3 - 466.3) <1718A41A-9923-3FD0-96B8-82376E153D27> /System/Library/PrivateFrameworks/BaseBoard.framework/Versions/A/BaseBoard
+    0x7fff4c5e7000 -     0x7fff4c623ff7  com.apple.bom (14.0 - 219.2) <586F1D9C-23B0-3F38-9C5B-728E9DD8B953> /System/Library/PrivateFrameworks/Bom.framework/Versions/A/Bom
+    0x7fff4d1a2000 -     0x7fff4d1f1fff  com.apple.ChunkingLibrary (307 - 307) <32E0F1A1-9DD6-3B52-91C2-93643041AA60> /System/Library/PrivateFrameworks/ChunkingLibrary.framework/Versions/A/ChunkingLibrary
+    0x7fff4e098000 -     0x7fff4e0a8ffb  com.apple.CommonAuth (4.0 - 2.0) <91EC83B5-857D-3D4F-93B1-AAD7E0E029D8> /System/Library/PrivateFrameworks/CommonAuth.framework/Versions/A/CommonAuth
+    0x7fff4e0bc000 -     0x7fff4e0d3fff  com.apple.commonutilities (8.0 - 900) <12C6DEE5-1740-39A5-9711-6F815C6D77BD> /System/Library/PrivateFrameworks/CommonUtilities.framework/Versions/A/CommonUtilities
+    0x7fff4e7d7000 -     0x7fff4ebacfc8  com.apple.CoreAUC (283.0.0 - 283.0.0) <BA9522E5-95D0-30D0-BEF4-691CEB51035B> /System/Library/PrivateFrameworks/CoreAUC.framework/Versions/A/CoreAUC
+    0x7fff4ebad000 -     0x7fff4ebdaff7  com.apple.CoreAVCHD (6.1.0 - 6100.4.1) <14FC549B-86BD-396A-B03E-6F5219482943> /System/Library/PrivateFrameworks/CoreAVCHD.framework/Versions/A/CoreAVCHD
+    0x7fff4ebfd000 -     0x7fff4ec1cffc  com.apple.analyticsd (1.0 - 1) <0384CD57-1A3E-397A-B9F6-19761A14A7D4> /System/Library/PrivateFrameworks/CoreAnalytics.framework/Versions/A/CoreAnalytics
+    0x7fff4ef27000 -     0x7fff4ef32ff7  com.apple.frameworks.CoreDaemon (1.3 - 1.3) <8F8E586D-C153-3ABA-88B7-6CEC7F476F0E> /System/Library/PrivateFrameworks/CoreDaemon.framework/Versions/B/CoreDaemon
+    0x7fff4f1b3000 -     0x7fff4f1c3ff3  com.apple.CoreEmoji (1.0 - 107.1) <CDCCB4B0-B98F-38E8-9568-C81320E756EB> /System/Library/PrivateFrameworks/CoreEmoji.framework/Versions/A/CoreEmoji
+    0x7fff4f803000 -     0x7fff4f86dff0  com.apple.CoreNLP (1.0 - 213) <40FC46D2-844C-3282-A8E4-69DD827F05C5> /System/Library/PrivateFrameworks/CoreNLP.framework/Versions/A/CoreNLP
+    0x7fff4fb2b000 -     0x7fff4fb2fffb  com.apple.CoreOptimization (1.0 - 1) <5B3AA81A-F8DF-3688-85FC-9A9517720DA7> /System/Library/PrivateFrameworks/CoreOptimization.framework/Versions/A/CoreOptimization
+    0x7fff4fc9b000 -     0x7fff4fca3ff8  com.apple.CorePhoneNumbers (1.0 - 1) <B2CE100D-B82F-3481-86F6-7F85FF8BFAFB> /System/Library/PrivateFrameworks/CorePhoneNumbers.framework/Versions/A/CorePhoneNumbers
+    0x7fff4fca4000 -     0x7fff4fcf694b  com.apple.CorePrediction (1.0 - 1) <CED11BE0-808C-39C5-9FCE-29368322E9B1> /System/Library/PrivateFrameworks/CorePrediction.framework/Versions/A/CorePrediction
+    0x7fff50690000 -     0x7fff506b3fff  com.apple.CoreSVG (1.0 - 129) <3141D198-0507-3F72-A2C9-752EAFE3EEB3> /System/Library/PrivateFrameworks/CoreSVG.framework/Versions/A/CoreSVG
+    0x7fff506b4000 -     0x7fff506e7fff  com.apple.CoreServicesInternal (446.7 - 446.7) <B2CEC515-2225-3CB1-B34A-904AAEA54FDF> /System/Library/PrivateFrameworks/CoreServicesInternal.framework/Versions/A/CoreServicesInternal
+    0x7fff506e8000 -     0x7fff50716ffd  com.apple.CSStore (1069.24 - 1069.24) <C96E5CE8-D604-3F13-B079-B2BA33B90081> /System/Library/PrivateFrameworks/CoreServicesStore.framework/Versions/A/CoreServicesStore
+    0x7fff50c3b000 -     0x7fff50cd1ff7  com.apple.CoreSymbolication (11.4 - 64535.33.2) <0E7A1529-C737-33FD-AA7D-A32EB8B192DA> /System/Library/PrivateFrameworks/CoreSymbolication.framework/Versions/A/CoreSymbolication
+    0x7fff50d69000 -     0x7fff50e95ff6  com.apple.coreui (2.1 - 609.4) <9B93CC42-804B-305A-8FCE-5F06821B544C> /System/Library/PrivateFrameworks/CoreUI.framework/Versions/A/CoreUI
+    0x7fff50e96000 -     0x7fff5104cff5  com.apple.CoreUtils (6.2.1 - 621.5) <CD4B58E5-1494-3457-84FF-3869378E2DC9> /System/Library/PrivateFrameworks/CoreUtils.framework/Versions/A/CoreUtils
+    0x7fff51186000 -     0x7fff51199ff1  com.apple.CrashReporterSupport (10.13 - 15016) <827F4E31-9F23-3683-AC5A-59CCA90F2359> /System/Library/PrivateFrameworks/CrashReporterSupport.framework/Versions/A/CrashReporterSupport
+    0x7fff51252000 -     0x7fff51264ff8  com.apple.framework.DFRFoundation (1.0 - 252.50.1) <19F79D32-71D3-3A87-98C9-B5C6C96076C4> /System/Library/PrivateFrameworks/DFRFoundation.framework/Versions/A/DFRFoundation
+    0x7fff51265000 -     0x7fff5126afff  com.apple.DSExternalDisplay (3.1 - 380) <971F24F1-B1FC-3674-9C00-F88EEF94DC05> /System/Library/PrivateFrameworks/DSExternalDisplay.framework/Versions/A/DSExternalDisplay
+    0x7fff512f4000 -     0x7fff5136eff0  com.apple.datadetectorscore (8.0 - 659) <9FD9BDFA-3724-3BEA-946C-0473447196A3> /System/Library/PrivateFrameworks/DataDetectorsCore.framework/Versions/A/DataDetectorsCore
+    0x7fff513ba000 -     0x7fff513f7ff8  com.apple.DebugSymbols (194 - 194) <9BCE6685-6C45-3DF9-98EB-FCF8196160F0> /System/Library/PrivateFrameworks/DebugSymbols.framework/Versions/A/DebugSymbols
+    0x7fff513f8000 -     0x7fff51580ff6  com.apple.desktopservices (1.14.5 - 1281.5.3) <79972B8B-7B60-3AD5-9A5F-17976DE8080B> /System/Library/PrivateFrameworks/DesktopServicesPriv.framework/Versions/A/DesktopServicesPriv
+    0x7fff51596000 -     0x7fff515a2ff8  com.apple.DeviceIdentity (1.0 - 1) <6E017199-DFC0-3464-A7E5-CB8928FC2F97> /System/Library/PrivateFrameworks/DeviceIdentity.framework/Versions/A/DeviceIdentity
+    0x7fff51807000 -     0x7fff518cfffe  com.apple.DiskImagesFramework (559.100.2 - 559.100.2) <DE281E96-21D0-3BE3-BEE0-D901B24D71EE> /System/Library/PrivateFrameworks/DiskImages.framework/Versions/A/DiskImages
+    0x7fff518d0000 -     0x7fff519a3ff1  com.apple.DiskManagement (13.0 - 1648.120.5) <650DBBE4-6624-3064-A26D-6BCAA0FE41F9> /System/Library/PrivateFrameworks/DiskManagement.framework/Versions/A/DiskManagement
+    0x7fff51a86000 -     0x7fff51a8aff9  com.apple.EFILogin (2.0 - 2) <B95015BC-5BC2-33D9-AD94-01905DD56193> /System/Library/PrivateFrameworks/EFILogin.framework/Versions/A/EFILogin
+    0x7fff52f18000 -     0x7fff53333ff1  com.apple.vision.FaceCore (4.3.0 - 4.3.0) <1B5D7DD6-718E-3111-A702-EB04B8903662> /System/Library/PrivateFrameworks/FaceCore.framework/Versions/A/FaceCore
+    0x7fff539d1000 -     0x7fff53b09ffc  libFontParser.dylib (277.2.5.3) <DEB18756-082F-359B-AE93-F9C3B5EC7AF4> /System/Library/PrivateFrameworks/FontServices.framework/libFontParser.dylib
+    0x7fff53b0a000 -     0x7fff53b3efff  libTrueTypeScaler.dylib (277.2.5.3) <B16255A6-C51A-328B-B679-8FBF64495770> /System/Library/PrivateFrameworks/FontServices.framework/libTrueTypeScaler.dylib
+    0x7fff53ba3000 -     0x7fff53bb3ff6  libhvf.dylib (1.0 - $[CURRENT_PROJECT_VERSION]) <6396BC1F-13C1-37D7-91B9-1FF60910C7FA> /System/Library/PrivateFrameworks/FontServices.framework/libhvf.dylib
+    0x7fff57094000 -     0x7fff57095fff  libmetal_timestamp.dylib (902.14.11) <BE88F259-0A3C-3910-8983-FB5E2C905E87> /System/Library/PrivateFrameworks/GPUCompiler.framework/Versions/3902/Libraries/libmetal_timestamp.dylib
+    0x7fff58752000 -     0x7fff58758fff  com.apple.GPUWrangler (5.2.4 - 5.2.4) <5B819701-9F0C-374B-8925-A22DFC16514F> /System/Library/PrivateFrameworks/GPUWrangler.framework/Versions/A/GPUWrangler
+    0x7fff58a77000 -     0x7fff58a9dff1  com.apple.GenerationalStorage (2.0 - 314) <5613706F-710A-39E0-8B25-BA103A768613> /System/Library/PrivateFrameworks/GenerationalStorage.framework/Versions/A/GenerationalStorage
+    0x7fff59bcc000 -     0x7fff59bdaffb  com.apple.GraphVisualizer (1.0 - 100.1) <0A86C9FF-4484-3C7F-BC71-3D23BDBE81CE> /System/Library/PrivateFrameworks/GraphVisualizer.framework/Versions/A/GraphVisualizer
+    0x7fff59bdb000 -     0x7fff59be8ff3  com.apple.GraphicsServices (1.0 - 1.0) <628EA7EF-A5C7-36E4-9193-46F55852C208> /System/Library/PrivateFrameworks/GraphicsServices.framework/Versions/A/GraphicsServices
+    0x7fff59d79000 -     0x7fff59e37ff4  com.apple.Heimdal (4.0 - 2.0) <F2C504F6-E211-3AB0-9754-D96D2F96634B> /System/Library/PrivateFrameworks/Heimdal.framework/Versions/A/Heimdal
+    0x7fff5bfbb000 -     0x7fff5bfc3ff5  com.apple.IOAccelerator (438.5.4 - 438.5.4) <A3CF45E0-4D88-33BF-BAEC-690D5664CDA0> /System/Library/PrivateFrameworks/IOAccelerator.framework/Versions/A/IOAccelerator
+    0x7fff5bfd0000 -     0x7fff5bfe7fff  com.apple.IOPresentment (1.0 - 37) <3EDBB454-D248-394B-A026-9717CD8535C3> /System/Library/PrivateFrameworks/IOPresentment.framework/Versions/A/IOPresentment
+    0x7fff5c36f000 -     0x7fff5c3baff1  com.apple.IconServices (438.3 - 438.3) <2AE74790-64F1-3B0A-9534-DEEEE307E562> /System/Library/PrivateFrameworks/IconServices.framework/Versions/A/IconServices
+    0x7fff5c578000 -     0x7fff5c57fff9  com.apple.InternationalSupport (1.0 - 45.4) <C22AA77A-EDA6-3626-8816-521A8CD43C4A> /System/Library/PrivateFrameworks/InternationalSupport.framework/Versions/A/InternationalSupport
+    0x7fff5c80c000 -     0x7fff5c82bffd  com.apple.security.KeychainCircle.KeychainCircle (1.0 - 1) <76DB5326-BE5D-3339-975C-D9FCF39A341E> /System/Library/PrivateFrameworks/KeychainCircle.framework/Versions/A/KeychainCircle
+    0x7fff5c960000 -     0x7fff5ca2effd  com.apple.LanguageModeling (1.0 - 215.1) <A6FAA215-9A01-3EE1-B304-2238801C5883> /System/Library/PrivateFrameworks/LanguageModeling.framework/Versions/A/LanguageModeling
+    0x7fff5ca2f000 -     0x7fff5ca77fff  com.apple.Lexicon-framework (1.0 - 72) <6AE1872C-0352-36FE-90CC-7303F13A5BEF> /System/Library/PrivateFrameworks/Lexicon.framework/Versions/A/Lexicon
+    0x7fff5ca7e000 -     0x7fff5ca83ff3  com.apple.LinguisticData (1.0 - 353.18) <686E7B7C-640F-3D7B-A9C1-31E2DFACD457> /System/Library/PrivateFrameworks/LinguisticData.framework/Versions/A/LinguisticData
+    0x7fff5cb27000 -     0x7fff5cb2cff7  com.apple.LoginUICore (4.0 - 4.0) <5D60C7D1-9DB7-30A3-9209-7E13644D3E9D> /System/Library/PrivateFrameworks/LoginUIKit.framework/Versions/A/Frameworks/LoginUICore.framework/Versions/A/LoginUICore
+    0x7fff5d31b000 -     0x7fff5d31efff  com.apple.Mangrove (1.0 - 25) <11A30F47-B1C1-375E-9FE7-0A196E92A52C> /System/Library/PrivateFrameworks/Mangrove.framework/Versions/A/Mangrove
+    0x7fff5d587000 -     0x7fff5d611ff8  com.apple.MediaExperience (1.0 - 1) <34E15DA2-02AA-32FA-99E1-9A139521E226> /System/Library/PrivateFrameworks/MediaExperience.framework/Versions/A/MediaExperience
+    0x7fff5d612000 -     0x7fff5d645fff  com.apple.MediaKit (16 - 923) <14E38848-C9BD-37F1-AE44-FC4CC839E8A1> /System/Library/PrivateFrameworks/MediaKit.framework/Versions/A/MediaKit
+    0x7fff5ddea000 -     0x7fff5de36fff  com.apple.spotlight.metadata.utilities (1.0 - 2076.6) <C3AEA22D-1FEB-3E38-9821-1FA447C8AF9D> /System/Library/PrivateFrameworks/MetadataUtilities.framework/Versions/A/MetadataUtilities
+    0x7fff5de37000 -     0x7fff5df08ffa  com.apple.gpusw.MetalTools (1.0 - 1) <A23FFAB6-437C-303C-A3E8-99F323F8E734> /System/Library/PrivateFrameworks/MetalTools.framework/Versions/A/MetalTools
+    0x7fff5df66000 -     0x7fff5df7fff4  com.apple.MobileAssets (1.0 - 619.120.1) <5AF95641-68C7-351A-A317-3C7B793502D6> /System/Library/PrivateFrameworks/MobileAsset.framework/Versions/A/MobileAsset
+    0x7fff5e13c000 -     0x7fff5e15afff  com.apple.MobileKeyBag (2.0 - 1.0) <B564179F-A5E9-3BD8-892D-CEF2BE0DA0D7> /System/Library/PrivateFrameworks/MobileKeyBag.framework/Versions/A/MobileKeyBag
+    0x7fff5e3bd000 -     0x7fff5e3edff7  com.apple.MultitouchSupport.framework (3440.1 - 3440.1) <4E7CB188-382E-3128-8671-4A3EF6E06622> /System/Library/PrivateFrameworks/MultitouchSupport.framework/Versions/A/MultitouchSupport
+    0x7fff5e8ed000 -     0x7fff5e8f7fff  com.apple.NetAuth (6.2 - 6.2) <D660F2CB-5A49-3DD0-9DB3-86EF0797828C> /System/Library/PrivateFrameworks/NetAuth.framework/Versions/A/NetAuth
+    0x7fff5f30d000 -     0x7fff5f358ffb  com.apple.OTSVG (1.0 - 643.1.5.1) <CD494F00-9AA4-3A48-916B-EA8661F9772D> /System/Library/PrivateFrameworks/OTSVG.framework/Versions/A/OTSVG
+    0x7fff6056c000 -     0x7fff60577ff2  com.apple.PerformanceAnalysis (1.243.2 - 243.2) <941698D6-EF00-3D59-8560-F160BC04B412> /System/Library/PrivateFrameworks/PerformanceAnalysis.framework/Versions/A/PerformanceAnalysis
+    0x7fff60578000 -     0x7fff605a0ffb  com.apple.persistentconnection (1.0 - 1.0) <FFC20BB6-9CF3-39F2-AE5C-8DEE348FE0C1> /System/Library/PrivateFrameworks/PersistentConnection.framework/Versions/A/PersistentConnection
+    0x7fff62f03000 -     0x7fff62f5dff6  com.apple.ProtectedCloudStorage (1.0 - 1) <969BF7A2-E989-3A22-BC1B-72B72E107229> /System/Library/PrivateFrameworks/ProtectedCloudStorage.framework/Versions/A/ProtectedCloudStorage
+    0x7fff62f5e000 -     0x7fff62f77ffb  com.apple.ProtocolBuffer (1 - 274.24.9.16.3) <A2E34123-7CED-378B-A43D-1B98B5B85F5C> /System/Library/PrivateFrameworks/ProtocolBuffer.framework/Versions/A/ProtocolBuffer
+    0x7fff633b7000 -     0x7fff633c3ff5  com.apple.xpc.RemoteServiceDiscovery (1.0 - 1738.120.8) <9754FC8C-3EAF-3F9B-8A28-A63D472DD6F0> /System/Library/PrivateFrameworks/RemoteServiceDiscovery.framework/Versions/A/RemoteServiceDiscovery
+    0x7fff633d6000 -     0x7fff633ffff1  com.apple.RemoteViewServices (2.0 - 148) <1C61CFC2-F76F-31E5-BA13-EFD5DC69C8D5> /System/Library/PrivateFrameworks/RemoteViewServices.framework/Versions/A/RemoteViewServices
+    0x7fff63400000 -     0x7fff63415ffa  com.apple.xpc.RemoteXPC (1.0 - 1738.120.8) <BEC43C3B-D472-335D-8D4B-90DCACEC5758> /System/Library/PrivateFrameworks/RemoteXPC.framework/Versions/A/RemoteXPC
+    0x7fff63564000 -     0x7fff6359fff0  com.apple.RunningBoardServices (1.0 - 223.100.31) <9FD1FC53-186A-3327-A359-B0BC7F4360EF> /System/Library/PrivateFrameworks/RunningBoardServices.framework/Versions/A/RunningBoardServices
+    0x7fff642c7000 -     0x7fff64313ff9  com.apple.Safari.SafeBrowsing (15609 - 15609.2.9.1.2) <57AC0345-D349-3477-9ECA-9BAD465819EA> /System/Library/PrivateFrameworks/SafariSafeBrowsing.framework/Versions/A/SafariSafeBrowsing
+    0x7fff64e7f000 -     0x7fff64e82ff5  com.apple.SecCodeWrapper (4.0 - 448.100.6) <813B3E57-6A95-3D7B-9094-C65D687A72B8> /System/Library/PrivateFrameworks/SecCodeWrapper.framework/Versions/A/SecCodeWrapper
+    0x7fff64ff5000 -     0x7fff6511cff0  com.apple.Sharing (1526.31 - 1526.31) <2CB07F08-7794-3BF2-9ED5-BAB5C55C9D2C> /System/Library/PrivateFrameworks/Sharing.framework/Versions/A/Sharing
+    0x7fff6652f000 -     0x7fff66825ff7  com.apple.SkyLight (1.600.0 - 451.4) <F5B9065A-E975-36D1-8D53-9FBF02171FAB> /System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/SkyLight
+    0x7fff67072000 -     0x7fff67080ffb  com.apple.SpeechRecognitionCore (6.0.91.2 - 6.0.91.2) <820602AB-117B-3C3E-B20B-819CBC97B7A4> /System/Library/PrivateFrameworks/SpeechRecognitionCore.framework/Versions/A/SpeechRecognitionCore
+    0x7fff6775a000 -     0x7fff6779bff9  com.apple.StreamingZip (1.0 - 1) <EFCDDC94-28EE-3BCA-A105-0A928D15ED8C> /System/Library/PrivateFrameworks/StreamingZip.framework/Versions/A/StreamingZip
+    0x7fff678b2000 -     0x7fff678bbff7  com.apple.SymptomDiagnosticReporter (1.0 - 1238.120.1) <581F31D6-94CB-38AA-BD56-1A63606E516E> /System/Library/PrivateFrameworks/SymptomDiagnosticReporter.framework/Versions/A/SymptomDiagnosticReporter
+    0x7fff6792c000 -     0x7fff67956ffa  com.apple.framework.SystemAdministration (1.0 - 1.0) <926BB2F5-E02C-30B7-949A-20EFE57CF242> /System/Library/PrivateFrameworks/SystemAdministration.framework/Versions/A/SystemAdministration
+    0x7fff67b72000 -     0x7fff67b82ff3  com.apple.TCC (1.0 - 1) <FD146B21-6DC0-3B66-BB95-57A5016B1365> /System/Library/PrivateFrameworks/TCC.framework/Versions/A/TCC
+    0x7fff680a7000 -     0x7fff6816dff0  com.apple.TextureIO (3.10.9 - 3.10.9) <E23E05ED-8190-3564-985E-446F15CB0709> /System/Library/PrivateFrameworks/TextureIO.framework/Versions/A/TextureIO
+    0x7fff682f9000 -     0x7fff682fafff  com.apple.TrustEvaluationAgent (2.0 - 33) <11DF5A28-4410-36A8-B3B8-BF1094BE1544> /System/Library/PrivateFrameworks/TrustEvaluationAgent.framework/Versions/A/TrustEvaluationAgent
+    0x7fff68332000 -     0x7fff6858aff0  com.apple.UIFoundation (1.0 - 662) <DFD3DD4A-E661-3A12-BB02-06898949617D> /System/Library/PrivateFrameworks/UIFoundation.framework/Versions/A/UIFoundation
+    0x7fff68621000 -     0x7fff68627ffe  com.apple.URLFormatting (119 - 119.18) <CE5B7B2B-7CB9-3214-BFA2-D6D4F13D7652> /System/Library/PrivateFrameworks/URLFormatting.framework/Versions/A/URLFormatting
+    0x7fff691fd000 -     0x7fff6921dffc  com.apple.UserManagement (1.0 - 1) <E168206A-9DC1-3C67-A9A6-52D816DBD5B1> /System/Library/PrivateFrameworks/UserManagement.framework/Versions/A/UserManagement
+    0x7fff69fc9000 -     0x7fff6a0b3ff8  com.apple.ViewBridge (464.1 - 464.1) <C698BAC9-26C8-39F1-BBC0-F57EBD2EFD7B> /System/Library/PrivateFrameworks/ViewBridge.framework/Versions/A/ViewBridge
+    0x7fff6a259000 -     0x7fff6a25afff  com.apple.WatchdogClient.framework (1.0 - 67.120.2) <3B8EBB6B-77D0-317C-A3DB-D0D2E294B18D> /System/Library/PrivateFrameworks/WatchdogClient.framework/Versions/A/WatchdogClient
+    0x7fff6a42d000 -     0x7fff6a42dfff  com.apple.WebInspectorUI (15609 - 15609.2.9.1.2) <7BDB4287-9F2D-399E-9850-F6F9CDAC5D33> /System/Library/PrivateFrameworks/WebInspectorUI.framework/Versions/A/WebInspectorUI
+    0x7fff6a5e6000 -     0x7fff6a621fff  libAWDSupport.dylib (949) <C4E783A8-A8D8-307D-AD50-3B66A8944B8E> /System/Library/PrivateFrameworks/WirelessDiagnostics.framework/Versions/A/Libraries/libAWDSupport.dylib
+    0x7fff6a622000 -     0x7fff6a902ff7  libAWDSupportFramework.dylib (3541.1) <1F4FB417-EE92-3095-9940-C35C93F6F020> /System/Library/PrivateFrameworks/WirelessDiagnostics.framework/Versions/A/Libraries/libAWDSupportFramework.dylib
+    0x7fff6a903000 -     0x7fff6a914fff  libprotobuf-lite.dylib (3541.1) <3EB3CBE0-544B-38D1-81EB-7D73CA221967> /System/Library/PrivateFrameworks/WirelessDiagnostics.framework/Versions/A/Libraries/libprotobuf-lite.dylib
+    0x7fff6a915000 -     0x7fff6a96effb  libprotobuf.dylib (3541.1) <45F77AE5-5D7A-30E7-9168-5546FDC59CA2> /System/Library/PrivateFrameworks/WirelessDiagnostics.framework/Versions/A/Libraries/libprotobuf.dylib
+    0x7fff6a96f000 -     0x7fff6a9b3ff6  com.apple.awd (1.0 - 949) <DAF51750-FD03-3509-9CBB-83E9EF0FB363> /System/Library/PrivateFrameworks/WirelessDiagnostics.framework/Versions/A/WirelessDiagnostics
+    0x7fff6ae87000 -     0x7fff6ae8affa  com.apple.dt.XCTTargetBootstrap (1.0 - 16091) <D4F09EC7-C63F-3861-B5DA-3F7C0DFF153D> /System/Library/PrivateFrameworks/XCTTargetBootstrap.framework/Versions/A/XCTTargetBootstrap
+    0x7fff6af04000 -     0x7fff6af12ff5  com.apple.audio.caulk (1.0 - 32.3) <7D3D2F91-8B1D-3558-B324-45BDF11306DB> /System/Library/PrivateFrameworks/caulk.framework/Versions/A/caulk
+    0x7fff6b254000 -     0x7fff6b256ff3  com.apple.loginsupport (1.0 - 1) <31F02734-1ECF-37D9-9DF6-7C3BC3A324FE> /System/Library/PrivateFrameworks/login.framework/Versions/A/Frameworks/loginsupport.framework/Versions/A/loginsupport
+    0x7fff6b257000 -     0x7fff6b26affd  com.apple.login (3.0 - 3.0) <1DC570FD-29EC-3AE8-BD34-D44C00E4621B> /System/Library/PrivateFrameworks/login.framework/Versions/A/login
+    0x7fff6dc48000 -     0x7fff6dc5dffe  libAccessibility.dylib (2790.70) <0175DCAB-ADCB-3F8F-BD64-E8E51C00825E> /usr/lib/libAccessibility.dylib
+    0x7fff6dd3a000 -     0x7fff6dd6dffa  libAudioToolboxUtility.dylib (1104.84) <BB234563-F952-3E7F-B630-4140DB5E0380> /usr/lib/libAudioToolboxUtility.dylib
+    0x7fff6dd74000 -     0x7fff6dda8fff  libCRFSuite.dylib (48) <02C52318-C537-3FD8-BBC4-E5BD25430652> /usr/lib/libCRFSuite.dylib
+    0x7fff6ddab000 -     0x7fff6ddb5fff  libChineseTokenizer.dylib (34) <04A7CB5A-FD68-398A-A206-33A510C115E7> /usr/lib/libChineseTokenizer.dylib
+    0x7fff6ddb6000 -     0x7fff6de3efff  libCoreStorage.dylib (551) <BBD3B3DC-270D-35F2-8C67-4595A257EEBB> /usr/lib/libCoreStorage.dylib
+    0x7fff6de41000 -     0x7fff6de43ff7  libDiagnosticMessagesClient.dylib (112) <27220E98-6CE2-33E3-BD48-3CC3CE4AA036> /usr/lib/libDiagnosticMessagesClient.dylib
+    0x7fff6de89000 -     0x7fff6e040ffb  libFosl_dynamic.dylib (100.4) <68038226-8CAA-36B5-B5D6-510F900B318D> /usr/lib/libFosl_dynamic.dylib
+    0x7fff6e067000 -     0x7fff6e06dff3  libIOReport.dylib (54) <E3A2148E-C5B2-30A8-ACD3-E081DD02BE90> /usr/lib/libIOReport.dylib
+    0x7fff6e14f000 -     0x7fff6e156fff  libMatch.1.dylib (36) <081FB6A9-0482-3697-A98B-6821FF476C6E> /usr/lib/libMatch.1.dylib
+    0x7fff6e185000 -     0x7fff6e1a5fff  libMobileGestalt.dylib (826.120.5) <1977AD00-533A-31AA-8D74-EA6CB962F668> /usr/lib/libMobileGestalt.dylib
+    0x7fff6e317000 -     0x7fff6e318fff  libSystem.B.dylib (1281.100.1) <DC04B185-E3C9-33AF-B450-EF3ED07FB021> /usr/lib/libSystem.B.dylib
+    0x7fff6e319000 -     0x7fff6e3a4ff7  libTelephonyUtilDynamic.dylib (5017.1) <4C11A09D-9B7E-3743-B9E6-39B4D466BAF1> /usr/lib/libTelephonyUtilDynamic.dylib
+    0x7fff6e3a5000 -     0x7fff6e3a6fff  libThaiTokenizer.dylib (3) <97DC10ED-3C11-3C89-B366-299A644035E7> /usr/lib/libThaiTokenizer.dylib
+    0x7fff6e3be000 -     0x7fff6e3d4fff  libapple_nghttp2.dylib (1.39.2) <B99D7150-D4E2-31A2-A594-36DA4B90D558> /usr/lib/libapple_nghttp2.dylib
+    0x7fff6e409000 -     0x7fff6e47bff7  libarchive.2.dylib (72.100.1) <20B70252-0C4B-3AFD-8C8D-F51921E9D324> /usr/lib/libarchive.2.dylib
+    0x7fff6e47c000 -     0x7fff6e515fe5  libate.dylib (3.0.1) <C4A5AE88-4E44-36FA-AD3E-0629AF9B94E0> /usr/lib/libate.dylib
+    0x7fff6e519000 -     0x7fff6e519ff3  libauto.dylib (187) <85383E24-1592-36BC-BB39-308B7F1C826E> /usr/lib/libauto.dylib
+    0x7fff6e51a000 -     0x7fff6e5deffe  libboringssl.dylib (283.120.1) <96F48388-EEC8-3034-8E8A-8D37DD0E49D9> /usr/lib/libboringssl.dylib
+    0x7fff6e5df000 -     0x7fff6e5efffb  libbsm.0.dylib (60.100.1) <B2331E11-3CBB-3BCF-93A6-12627AE444D0> /usr/lib/libbsm.0.dylib
+    0x7fff6e5f0000 -     0x7fff6e5fcfff  libbz2.1.0.dylib (44) <BF40E193-8856-39B7-98F8-7A17B328B1E9> /usr/lib/libbz2.1.0.dylib
+    0x7fff6e5fd000 -     0x7fff6e64ffff  libc++.1.dylib (902.1) <AD0805FE-F98B-3E2F-B072-83782B22DAC9> /usr/lib/libc++.1.dylib
+    0x7fff6e650000 -     0x7fff6e665ffb  libc++abi.dylib (902) <771E9263-E832-3985-9477-8F1B2D73B771> /usr/lib/libc++abi.dylib
+    0x7fff6e666000 -     0x7fff6e666fff  libcharset.1.dylib (59) <FF23D4ED-A5AD-3592-9574-48486C7DF85B> /usr/lib/libcharset.1.dylib
+    0x7fff6e667000 -     0x7fff6e678fff  libcmph.dylib (8) <296A51E6-9661-3AC2-A1C9-F1E3510F91AA> /usr/lib/libcmph.dylib
+    0x7fff6e679000 -     0x7fff6e690fd7  libcompression.dylib (87) <21F37C2E-B9AA-38CE-9023-B763C8828AC6> /usr/lib/libcompression.dylib
+    0x7fff6e96a000 -     0x7fff6e980ff7  libcoretls.dylib (167) <9E5D1E0C-03F8-37B6-82A1-0D0597021CB8> /usr/lib/libcoretls.dylib
+    0x7fff6e981000 -     0x7fff6e982fff  libcoretls_cfhelpers.dylib (167) <C23BE09B-85D1-3744-9E7B-E2B11ACD5442> /usr/lib/libcoretls_cfhelpers.dylib
+    0x7fff6ee25000 -     0x7fff6ef29fef  libcrypto.44.dylib (47.120.1) <B48C0D1A-CDCB-34E4-921E-00EBFF1208DE> /usr/lib/libcrypto.44.dylib
+    0x7fff6ef2c000 -     0x7fff6ef37fff  libcsfde.dylib (551) <8FBB94EC-712C-3C0F-A8A9-88EE5F4679EF> /usr/lib/libcsfde.dylib
+    0x7fff6ef3f000 -     0x7fff6ef9eff7  libcups.2.dylib (483.6) <FFE8FE67-A6CC-3C38-A9D7-D411D7B562F1> /usr/lib/libcups.2.dylib
+    0x7fff6efa0000 -     0x7fff6f005ff7  libcurl.4.dylib (118.120.2) <F2C246F3-460E-31A7-B900-2A9560533730> /usr/lib/libcurl.4.dylib
+    0x7fff6f0a8000 -     0x7fff6f0a8fff  libenergytrace.dylib (21) <DBF8BDEE-7229-3F06-AC10-A28DCC4243C0> /usr/lib/libenergytrace.dylib
+    0x7fff6f0a9000 -     0x7fff6f0c1fff  libexpat.1.dylib (19.60.2) <C9163264-BA81-3CC6-9B8C-48A9A0709DD5> /usr/lib/libexpat.1.dylib
+    0x7fff6f0cf000 -     0x7fff6f0d1fff  libfakelink.dylib (149.1) <122F530F-F10E-3DD5-BBEA-91796BE583F3> /usr/lib/libfakelink.dylib
+    0x7fff6f0e0000 -     0x7fff6f0e5fff  libgermantok.dylib (24) <DD279BF6-E906-30D3-A69E-DC797E95F147> /usr/lib/libgermantok.dylib
+    0x7fff6f0e6000 -     0x7fff6f0efff7  libheimdal-asn1.dylib (564.100.1) <68FA1BE5-8FFC-3345-8980-8D8629EBA451> /usr/lib/libheimdal-asn1.dylib
+    0x7fff6f0f0000 -     0x7fff6f1e0fff  libiconv.2.dylib (59) <F58FED71-6CCA-30E8-9A51-13E9B46E568D> /usr/lib/libiconv.2.dylib
+    0x7fff6f1e1000 -     0x7fff6f438fff  libicucore.A.dylib (64260.0.1) <7B9204AC-EA14-3FF3-B6B9-4C85B37EED79> /usr/lib/libicucore.A.dylib
+    0x7fff6f452000 -     0x7fff6f453fff  liblangid.dylib (133) <36581D30-1C7B-3A58-AA07-36237BD75E0E> /usr/lib/liblangid.dylib
+    0x7fff6f454000 -     0x7fff6f46cff3  liblzma.5.dylib (16) <4DB30730-DBD1-3503-957A-D604049B98F9> /usr/lib/liblzma.5.dylib
+    0x7fff6f484000 -     0x7fff6f52bff7  libmecab.dylib (883.11) <66AD729B-2BCC-3347-B9B3-FD88570E884D> /usr/lib/libmecab.dylib
+    0x7fff6f52c000 -     0x7fff6f78eff1  libmecabra.dylib (883.11) <2AE744D2-AC95-3720-8E66-4F9C7A79384C> /usr/lib/libmecabra.dylib
+    0x7fff6fafb000 -     0x7fff6fb2afff  libncurses.5.4.dylib (57) <B0B09D08-A7C9-38E9-8BF4-E4F4882F93A6> /usr/lib/libncurses.5.4.dylib
+    0x7fff6fc5a000 -     0x7fff700d6ff5  libnetwork.dylib (1880.120.4) <715FB943-BA01-351C-BEA6-121970472985> /usr/lib/libnetwork.dylib
+    0x7fff70177000 -     0x7fff701aafde  libobjc.A.dylib (787.1) <CA836D3E-4595-33F1-B70C-7E39A3FBBE16> /usr/lib/libobjc.A.dylib
+    0x7fff701ab000 -     0x7fff701acff7  libodfde.dylib (26) <2DDA61BF-E92A-3463-B1C4-D59E40D34D34> /usr/lib/libodfde.dylib
+    0x7fff701bd000 -     0x7fff701c1fff  libpam.2.dylib (25.100.1) <732E8D8E-C630-3EC2-B6C3-A1564E3B68B8> /usr/lib/libpam.2.dylib
+    0x7fff701c4000 -     0x7fff701faff7  libpcap.A.dylib (89.120.1) <CF2ADF15-2D44-3A35-94B4-DD24052F9B23> /usr/lib/libpcap.A.dylib
+    0x7fff7027e000 -     0x7fff70296fff  libresolv.9.dylib (67.40.1) <B0F5D204-7EF2-3B0B-90EF-BB4D196FCC62> /usr/lib/libresolv.9.dylib
+    0x7fff70298000 -     0x7fff702dcff7  libsandbox.1.dylib (1217.120.7) <728BC15F-9A6C-3634-9427-60C01CB5A5D6> /usr/lib/libsandbox.1.dylib
+    0x7fff702dd000 -     0x7fff702efff7  libsasl2.2.dylib (213.120.1) <E6375405-168D-3B75-8042-C8B329D01AB9> /usr/lib/libsasl2.2.dylib
+    0x7fff702f0000 -     0x7fff702f1ff7  libspindump.dylib (281.3) <0C3A8B48-DC31-3F61-B4CC-746157042D0E> /usr/lib/libspindump.dylib
+    0x7fff702f2000 -     0x7fff704dcff7  libsqlite3.dylib (308.5) <AF518115-4AD1-39F2-9B82-E2640E2221E1> /usr/lib/libsqlite3.dylib
+    0x7fff705d0000 -     0x7fff705fdffb  libssl.46.dylib (47.120.1) <6209494A-4AAD-344E-992C-03ACD2D4C402> /usr/lib/libssl.46.dylib
+    0x7fff706d2000 -     0x7fff7072cff8  libusrtcp.dylib (1880.120.4) <E5B0C1C5-ADF2-37CF-8F2B-B196D2266474> /usr/lib/libusrtcp.dylib
+    0x7fff7072d000 -     0x7fff70730ffb  libutil.dylib (57) <D33B63D2-ADC2-38BD-B8F2-24056C41E07B> /usr/lib/libutil.dylib
+    0x7fff70731000 -     0x7fff7073eff7  libxar.1.dylib (425.2) <943A4CBB-331B-3A04-A11F-A2301189D40B> /usr/lib/libxar.1.dylib
+    0x7fff70744000 -     0x7fff70826ff7  libxml2.2.dylib (33.3) <262EF7C6-7D83-3C01-863F-36E97F5ACD34> /usr/lib/libxml2.2.dylib
+    0x7fff7082a000 -     0x7fff70852fff  libxslt.1.dylib (16.9) <86FE4382-BD77-3C19-A678-11EBCD70685A> /usr/lib/libxslt.1.dylib
+    0x7fff70853000 -     0x7fff70865ff3  libz.1.dylib (76) <DB120508-3BED-37A8-B439-5235EAB4618A> /usr/lib/libz.1.dylib
+    0x7fff7088f000 -     0x7fff70891ff9  liblog_network.dylib (1880.120.4) <517AFC4A-A772-37E9-B212-00398E23C2EE> /usr/lib/log/liblog_network.dylib
+    0x7fff71113000 -     0x7fff71118ff3  libcache.dylib (83) <A5ECC751-A681-30D8-B33C-D192C15D25C8> /usr/lib/system/libcache.dylib
+    0x7fff71119000 -     0x7fff71124fff  libcommonCrypto.dylib (60165.120.1) <C321A74A-AA91-3785-BEBF-BEDC6975026C> /usr/lib/system/libcommonCrypto.dylib
+    0x7fff71125000 -     0x7fff7112cfff  libcompiler_rt.dylib (101.2) <652A6012-7E5C-3F4F-9438-86BC094526F3> /usr/lib/system/libcompiler_rt.dylib
+    0x7fff7112d000 -     0x7fff71136ff7  libcopyfile.dylib (166.40.1) <40113A69-A81C-3397-ADC6-1D16B9A22C3E> /usr/lib/system/libcopyfile.dylib
+    0x7fff71137000 -     0x7fff711c9fe3  libcorecrypto.dylib (866.120.3) <5E4B0E50-24DD-3E04-9374-EDA9FFD6257B> /usr/lib/system/libcorecrypto.dylib
+    0x7fff712d6000 -     0x7fff71316ff0  libdispatch.dylib (1173.100.2) <201EDBF3-0B36-31BA-A7CB-443CE35C05D4> /usr/lib/system/libdispatch.dylib
+    0x7fff71317000 -     0x7fff7134dfff  libdyld.dylib (750.5) <7E711A46-5E4D-393C-AEA6-440E2A5CCD0C> /usr/lib/system/libdyld.dylib
+    0x7fff7134e000 -     0x7fff7134effb  libkeymgr.dylib (30) <52662CAA-DB1F-30A3-BE13-D6274B1A6D7B> /usr/lib/system/libkeymgr.dylib
+    0x7fff7134f000 -     0x7fff7135bff3  libkxld.dylib (6153.121.1) <F4434EE5-E521-3481-83FC-62D57DEB6B3D> /usr/lib/system/libkxld.dylib
+    0x7fff7135c000 -     0x7fff7135cff7  liblaunch.dylib (1738.120.8) <07CF647B-F9DC-3907-AD98-2F85FCB34A72> /usr/lib/system/liblaunch.dylib
+    0x7fff7135d000 -     0x7fff71362ff7  libmacho.dylib (959.0.1) <D91DFF00-E22F-3796-8A1C-4C1F5F8FA03C> /usr/lib/system/libmacho.dylib
+    0x7fff71363000 -     0x7fff71365ff3  libquarantine.dylib (110.40.3) <D3B7D02C-7646-3FB4-8529-B36DCC2419EA> /usr/lib/system/libquarantine.dylib
+    0x7fff71366000 -     0x7fff71367ff7  libremovefile.dylib (48) <B5E88D9B-C2BE-3496-BBB2-C996317E18A3> /usr/lib/system/libremovefile.dylib
+    0x7fff71368000 -     0x7fff7137fff3  libsystem_asl.dylib (377.60.2) <1170348D-2491-33F1-AA79-E2A05B4A287C> /usr/lib/system/libsystem_asl.dylib
+    0x7fff71380000 -     0x7fff71380ff7  libsystem_blocks.dylib (74) <7AFBCAA6-81BE-36C3-8DB0-AAE0A4ACE4C5> /usr/lib/system/libsystem_blocks.dylib
+    0x7fff71381000 -     0x7fff71408fff  libsystem_c.dylib (1353.100.2) <935DDCE9-4ED0-3F79-A05A-A123DDE399CC> /usr/lib/system/libsystem_c.dylib
+    0x7fff71409000 -     0x7fff7140cffb  libsystem_configuration.dylib (1061.120.2) <EA9BC2B1-5001-3463-9FAF-39FF61CAC87C> /usr/lib/system/libsystem_configuration.dylib
+    0x7fff7140d000 -     0x7fff71410fff  libsystem_coreservices.dylib (114) <3D0A3AA8-8415-37B2-AAE3-66C03BCE8B55> /usr/lib/system/libsystem_coreservices.dylib
+    0x7fff71411000 -     0x7fff71419fff  libsystem_darwin.dylib (1353.100.2) <6EEC9975-EE3B-3C95-AA5B-030FD10587BC> /usr/lib/system/libsystem_darwin.dylib
+    0x7fff7141a000 -     0x7fff71421fff  libsystem_dnssd.dylib (1096.100.3) <0115092A-E61B-317D-8670-41C7C34B1A82> /usr/lib/system/libsystem_dnssd.dylib
+    0x7fff71422000 -     0x7fff71423ffb  libsystem_featureflags.dylib (17) <AFDB5095-0472-34AC-BA7E-497921BF030A> /usr/lib/system/libsystem_featureflags.dylib
+    0x7fff71424000 -     0x7fff71471ff7  libsystem_info.dylib (538) <851693E9-C079-3547-AD41-353F8C248BE8> /usr/lib/system/libsystem_info.dylib
+    0x7fff71472000 -     0x7fff7149eff7  libsystem_kernel.dylib (6153.121.1) <84D09AE3-2DA8-3F6D-ACEC-DC4990B1A2FF> /usr/lib/system/libsystem_kernel.dylib
+    0x7fff7149f000 -     0x7fff714e6fff  libsystem_m.dylib (3178) <436CFF76-6A99-36F2-A3B6-8D017396A050> /usr/lib/system/libsystem_m.dylib
+    0x7fff714e7000 -     0x7fff7150efff  libsystem_malloc.dylib (283.100.6) <D4BA7DF2-57AC-33B0-B948-A688EE43C799> /usr/lib/system/libsystem_malloc.dylib
+    0x7fff7150f000 -     0x7fff7151cffb  libsystem_networkextension.dylib (1095.120.6) <6DE86DB0-8CD2-361E-BD6A-A34282B47847> /usr/lib/system/libsystem_networkextension.dylib
+    0x7fff7151d000 -     0x7fff71526ff7  libsystem_notify.dylib (241.100.2) <7E9E2FC8-DF26-340C-B196-B81B11850C46> /usr/lib/system/libsystem_notify.dylib
+    0x7fff71527000 -     0x7fff7152ffef  libsystem_platform.dylib (220.100.1) <736920EA-6AE0-3B1B-BBDA-7DCDF0C229DF> /usr/lib/system/libsystem_platform.dylib
+    0x7fff71530000 -     0x7fff7153afff  libsystem_pthread.dylib (416.100.3) <77488669-19A3-3993-AD65-CA5377E2475A> /usr/lib/system/libsystem_pthread.dylib
+    0x7fff7153b000 -     0x7fff7153fff3  libsystem_sandbox.dylib (1217.120.7) <20C93D69-6452-3C82-9521-8AE54345C66F> /usr/lib/system/libsystem_sandbox.dylib
+    0x7fff71540000 -     0x7fff71542fff  libsystem_secinit.dylib (62.100.2) <E851113D-D5B1-3FB0-9D29-9C7647A71961> /usr/lib/system/libsystem_secinit.dylib
+    0x7fff71543000 -     0x7fff7154affb  libsystem_symptoms.dylib (1238.120.1) <25C3866B-004E-3621-9CD3-B1E9C4D887EB> /usr/lib/system/libsystem_symptoms.dylib
+    0x7fff7154b000 -     0x7fff71561ff2  libsystem_trace.dylib (1147.120) <A1ED1D3A-5FAD-3559-A1D6-1BE4E1C5756A> /usr/lib/system/libsystem_trace.dylib
+    0x7fff71563000 -     0x7fff71568ff7  libunwind.dylib (35.4) <253A12E2-F88F-3838-A666-C5306F833CB8> /usr/lib/system/libunwind.dylib
+    0x7fff71569000 -     0x7fff7159effe  libxpc.dylib (1738.120.8) <68D433B6-DCFF-385D-8620-F847FB7D4A5A> /usr/lib/system/libxpc.dylib
+
+External Modification Summary:
+  Calls made by other processes targeting this process:
+    task_for_pid: 409
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by all processes on this machine:
+    task_for_pid: 219754
+    thread_create: 0
+    thread_set_state: 0
+
+VM Region Summary:
+ReadOnly portion of Libraries: Total=682.0M resident=0K(0%) swapped_out_or_unallocated=682.0M(100%)
+Writable regions: Total=1.9G written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=1.9G(100%)
+ 
+                                VIRTUAL   REGION 
+REGION TYPE                        SIZE    COUNT (non-coalesced) 
+===========                     =======  ======= 
+Accelerate framework               256K        2 
+Activity Tracing                   256K        1 
+CG backing stores                  992K        2 
+CG image                            72K        3 
+CoreAnimation                      136K        8 
+CoreGraphics                         8K        1 
+CoreImage                           24K        2 
+CoreUI image data                  788K        7 
+Dispatch continuations            8192K        1 
+Foundation                           4K        1 
+Image IO                            44K       11 
+Kernel Alloc Once                    8K        1 
+MALLOC                           103.5M       63 
+MALLOC guard page                   32K        7 
+Memory Tag 242                      12K        1 
+STACK GUARD                       56.4M      116 
+Stack                             24.2M      116 
+VM_ALLOCATE                        1.7G      376 
+VM_ALLOCATE (reserved)              36K        1         reserved VM address space (unallocated)
+__DATA                            32.1M      341 
+__DATA_CONST                       129K        5 
+__FONT_DATA                          4K        1 
+__LINKEDIT                       389.3M        8 
+__OBJC_RO                         32.2M        1 
+__OBJC_RW                         1892K        2 
+__TEXT                           292.7M      335 
+__UNICODE                          564K        1 
+mapped file                      105.2M       66 
+shared memory                      636K       15 
+===========                     =======  ======= 
+TOTAL                              2.8G     1495 
+TOTAL, minus reserved VM space     2.8G     1495 
+
+Model: MacBookPro14,1, BootROM 207.0.0.0.0, 2 processors, Dual-Core Intel Core i7, 2.5 GHz, 8 GB, SMC 2.43f10
+Graphics: kHW_IntelIrisGraphics640Item, Intel Iris Plus Graphics 640, spdisplays_builtin
+Memory Module: BANK 0/DIMM0, 4 GB, LPDDR3, 2133 MHz, 0x80AD, 0x483943434E4E4E424A54414C41522D4E5644
+Memory Module: BANK 1/DIMM0, 4 GB, LPDDR3, 2133 MHz, 0x80AD, 0x483943434E4E4E424A54414C41522D4E5644
+AirPort: spairport_wireless_card_type_airport_extreme (0x14E4, 0x170), Broadcom BCM43xx 1.0 (7.77.111.1 AirPortDriverBrcmNIC-1610.1)
+Bluetooth: Version 7.0.5f6, 3 services, 27 devices, 1 incoming serial ports
+Network Service: Wi-Fi, AirPort, en0
+USB Device: USB 3.0 Bus
+Thunderbolt Bus: MacBook Pro, Apple Inc., 41.4
